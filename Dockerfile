@@ -15,11 +15,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 COPY pyproject.toml /app/pyproject.toml
 COPY src /app/src
 COPY frontend /app/frontend
+COPY billingfiles /app/billingfiles
 COPY .env.example /app/.env.example
 
 RUN python -m pip install --no-cache-dir --upgrade pip && \
     python -m pip install --no-cache-dir . && \
-    ln -s /app/frontend "$(python -c "import audit_engine, pathlib; print(pathlib.Path(audit_engine.__file__).resolve()>
+    ln -s /app/frontend "$(python -c "import audit_engine, pathlib; +print(pathlib.Path(audit_engine.__file__).resolve().parents[2] / 'frontend')")"
 
 EXPOSE 8001
 
