@@ -1,12 +1,15 @@
 from __future__ import annotations
 
+import os
+import secrets
 from dataclasses import asdict
 from pathlib import Path
 from tempfile import NamedTemporaryFile
 
-from fastapi import FastAPI, File, Form, HTTPException, Query, UploadFile
+from fastapi import Depends, FastAPI, File, Form, HTTPException, Query, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, Response
+from fastapi.security import HTTPBasic, HTTPBasicCredentials
 from fastapi.staticfiles import StaticFiles
 
 from audit_engine.config import load_settings
@@ -19,7 +22,23 @@ from audit_engine.reporting import build_shift_note_audit_csv_bytes, build_shift
 ROOT_DIR = Path(__file__).resolve().parents[2]
 FRONTEND_DIR = ROOT_DIR / "frontend"
 
-app = FastAPI(title="Meadowbrook Audit API", version="0.1.0")
+security = HTTPBasic()
+
+APP_USERNAME = os.getenv("APP_USERNAME", "")
+APP_PASSWORD = os.getenv("APP_PASSWORD", "")
+
+
+def verify_credentials(credentials: HTTPBasicCredentials = Depends(security)) -> str:
+    if not APP_USERNAME or not APP_PASSWORD:
+        raise HTTPException(status_code=500, detail="APP_USERNAME / APP_PASSWORD not configured")
+    username_ok = secrets.compare_digest(credentials.username.encode(), APP_USERNAME.encode())
+    password_ok = secrets.compare_digest(credentials.password.encode(), APP_PASSWORD.encode())
+    if not (username_ok and password_ok):
+        raise HTTPException(status_code=401, detail="Invalid credentials", headers={"WWW-Authenticate": "Basic"})
+    return credentials.username
+
+
+app = FastAPI(title="Meadowbrook Audit API", version="0.1.0", dependencies=[Depends(verify_credentials)])
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://127.0.0.1:8000", "http://localhost:8000", "http://127.0.0.1:8001", "http://localhost:8001"],

@@ -18,7 +18,8 @@ COPY frontend /app/frontend
 COPY .env.example /app/.env.example
 
 RUN python -m pip install --no-cache-dir --upgrade pip && \
-    python -m pip install --no-cache-dir .
+    python -m pip install --no-cache-dir . && \
+    ln -s /app/frontend "$(python -c "import audit_engine, pathlib; print(pathlib.Path(audit_engine.__file__).resolve()>
 
 EXPOSE 8001
 

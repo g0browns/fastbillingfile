@@ -7,7 +7,7 @@ services:
     env_file:
       - .env
     ports:
-      - "8000:8001"
+      - "8005:8001"
     restart: unless-stopped
     volumes:
       - ./output:/app/output
