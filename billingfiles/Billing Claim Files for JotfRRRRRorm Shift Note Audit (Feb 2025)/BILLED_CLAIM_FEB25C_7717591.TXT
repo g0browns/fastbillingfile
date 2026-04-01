@@ -1,0 +1,165 @@
+                                                                        DEPARTMENT OF DEVELOPMENTAL DISABILITIES                                      07:16 Friday, February 14, 2025   1
+                                                                             DIVISION OF INFORMATION SYSTEMS
+                          (MBSDHSTP)                                                                                                                           
+                                                                                 MEDICAID BILLING SYSTEM
+                                                                 TOTAL NET AMOUNT BILLED TO OHIO DEPARTMENT OF MEDICAID
+                                                                       DURING THE CURRENT BILLING CYCLE OF FEB25C
+                                                                      BY CONTRACTOR, PROGRAM, AND MONTH/YEAR BILLED
+
+------------------------- CONTRACT NUMBER=7717591  NAME=MEADOWBROOK SERVICES  PROGRAM=INDIV OPTION WAIVER  YEAR/MONTH BILLED=2025/02   ODM PROV MED NBR=0218025 -------------------------
+
+                             MEDICAID                                                                             UNITS                                OTHER              NET     CLAIM
+                             BILLING           SERVICE   SERV   GROUP   STAFF   SERVICE       INPUT      BILLED    OF     CLM            AMOUNT       SOURCE           AMOUNT   REFERENCE
+RECIPIENT NAME               NUMBER               DATE   CODE   SIZE    SIZE    COUNTY         RATE        RATE   SERV    TYPE           BILLED       AMOUNT           BILLED    NUMBER
+
+COHN, MARTIN                 105973135499   02/05/2025   APC      1       1     SUMMIT        $8.50       $8.50      44    C            $374.00                       $374.00            
+COHN, MARTIN                 105973135499   02/06/2025   APC      1       1     SUMMIT        $8.50       $8.50      44    C            $374.00                       $374.00            
+COHN, MARTIN                 105973135499   02/07/2025   APC      1       1     SUMMIT        $8.50       $8.50      44    C            $374.00                       $374.00            
+COHN, MARTIN                 105973135499   02/08/2025   APC      1       1     SUMMIT        $8.50       $8.50      64    C            $544.00                       $544.00            
+COHN, MARTIN                 105973135499   02/09/2025   APC      1       1     SUMMIT        $8.50       $8.50      64    C            $544.00                       $544.00            
+COHN, MARTIN                 105973135499   02/11/2025   APC      1       1     SUMMIT        $8.50       $8.50      44    C            $374.00                       $374.00            
+EMANUELE, PATRICIA           773163918801   02/05/2025   ATB      1       1     SUMMIT       $28.29      $28.29       2    C             $56.58                        $56.58            
+EMANUELE, PATRICIA           773163918801   02/05/2025   AVH      1       1     SUMMIT       $59.50      $59.50       1    C             $59.50                        $59.50            
+EMANUELE, PATRICIA           773163918801   02/06/2025   ATB      1       1     SUMMIT       $28.29      $28.29       2    C             $56.58                        $56.58            
+EMANUELE, PATRICIA           773163918801   02/06/2025   AVH      1       1     SUMMIT       $59.50      $59.50       1    C             $59.50                        $59.50            
+EMANUELE, PATRICIA           773163918801   02/07/2025   APC      1       1     SUMMIT        $8.50       $8.50      32    C            $272.00                       $272.00            
+EMANUELE, PATRICIA           773163918801   02/07/2025   ATB      1       1     SUMMIT       $28.29      $28.29       2    C             $56.58                        $56.58            
+EMANUELE, PATRICIA           773163918801   02/07/2025   AVH      1       1     SUMMIT       $59.50      $59.50       1    C             $59.50                        $59.50            
+EMANUELE, PATRICIA           773163918801   02/08/2025   APC      1       1     SUMMIT        $8.50       $8.50      12    C            $102.00                       $102.00            
+EMANUELE, PATRICIA           773163918801   02/09/2025   APC      1       1     SUMMIT        $8.50       $8.50      32    C            $272.00                       $272.00            
+EMANUELE, PATRICIA           773163918801   02/10/2025   APC      1       1     SUMMIT        $8.50       $8.50      12    C            $102.00                       $102.00            
+EMANUELE, PATRICIA           773163918801   02/10/2025   ATB      1       1     SUMMIT       $28.29      $28.29       2    C             $56.58                        $56.58            
+EMANUELE, PATRICIA           773163918801   02/10/2025   AVH      1       1     SUMMIT       $59.50      $59.50       1    C             $59.50                        $59.50            
+EMANUELE, PATRICIA           773163918801   02/11/2025   ATB      1       1     SUMMIT       $28.29      $28.29       2    C             $56.58                        $56.58            
+EMANUELE, PATRICIA           773163918801   02/11/2025   AVH      1       1     SUMMIT       $59.50      $59.50       1    C             $59.50                        $59.50            
+FORD, SARAH                  104750086199   02/05/2025   APC      1       1     SUMMIT        $8.50       $8.50      32    C            $272.00                       $272.00            
+FORD, SARAH                  104750086199   02/06/2025   APC      1       1     SUMMIT        $8.50       $8.50      28    C            $238.00                       $238.00            
+FORD, SARAH                  104750086199   02/07/2025   APC      1       1     SUMMIT        $8.50       $8.50      32    C            $272.00                       $272.00            
+FORD, SARAH                  104750086199   02/10/2025   APC      1       1     SUMMIT        $8.50       $8.50      32    C            $272.00                       $272.00            
+FORD, SARAH                  104750086199   02/11/2025   APC      1       1     SUMMIT        $8.50       $8.50      32    C            $272.00                       $272.00            
+FRYMIER, GAGE                105526221499   02/05/2025   ADS      1       1     SUMMIT       $59.50      $59.50       1    C             $59.50                        $59.50            
+FRYMIER, GAGE                105526221499   02/05/2025   ATB      1       1     SUMMIT       $28.29      $28.29       2    C             $56.58                        $56.58            
+FRYMIER, GAGE                105526221499   02/07/2025   ADS      1       1     SUMMIT       $59.50      $59.50       1    C             $59.50                        $59.50            
+FRYMIER, GAGE                105526221499   02/07/2025   ATB      1       1     SUMMIT       $28.29      $28.29       2    C             $56.58                        $56.58            
+FRYMIER, GAGE                105526221499   02/10/2025   ADS      1       1     SUMMIT       $59.50      $59.50       1    C             $59.50                        $59.50            
+FRYMIER, GAGE                105526221499   02/10/2025   ATB      1       1     SUMMIT       $28.29      $28.29       2    C             $56.58                        $56.58            
+HAYS, CARI                   773163777801   02/05/2025   APC      1       1     SUMMIT        $8.50       $8.50      96    C            $816.00                       $816.00            
+HAYS, CARI                   773163777801   02/06/2025   APC      1       1     SUMMIT        $8.50       $8.50      96    C            $816.00                       $816.00            
+HAYS, CARI                   773163777801   02/07/2025   APC      1       1     SUMMIT        $8.50       $8.50      96    C            $816.00                       $816.00            
+HAYS, CARI                   773163777801   02/08/2025   APC      1       1     SUMMIT        $8.50       $8.50      96    C            $816.00                       $816.00            
+HAYS, CARI                   773163777801   02/09/2025   APC      1       1     SUMMIT        $8.50       $8.50      96    C            $816.00                       $816.00            
+HAYS, CARI                   773163777801   02/10/2025   APC      1       1     SUMMIT        $8.50       $8.50      96    C            $816.00                       $816.00            
+HAYS, CARI                   773163777801   02/11/2025   APC      1       1     SUMMIT        $8.50       $8.50      96    C            $816.00                       $816.00            
+ILER, KATIE                  106432048299   02/05/2025   APC      1       1     SUMMIT        $8.50       $8.50      16    C            $136.00                       $136.00            
+ILER, KATIE                  106432048299   02/06/2025   APC      1       1     SUMMIT        $8.50       $8.50      28    C            $238.00                       $238.00            
+ILER, KATIE                  106432048299   02/07/2025   APC      1       1     SUMMIT        $8.50       $8.50      32    C            $272.00                       $272.00            
+ILER, KATIE                  106432048299   02/10/2025   APC      1       1     SUMMIT        $8.50       $8.50      28    C            $238.00                       $238.00            
+ILER, KATIE                  106432048299   02/11/2025   APC      1       1     SUMMIT        $8.50       $8.50      32    C            $272.00                       $272.00            
+PLANTS, JASON                104993220399   02/05/2025   ASA      1       1     PORTAGE     $213.91     $213.91       1    C            $213.91                       $213.91            
+PLANTS, JASON                104993220399   02/05/2025   ATB      1       1     PORTAGE      $28.29      $28.29       2    C             $56.58                        $56.58            
+PLANTS, JASON                104993220399   02/05/2025   AVH      1       1     PORTAGE      $59.50      $59.50       1    C             $59.50                        $59.50            
+PLANTS, JASON                104993220399   02/06/2025   ASA      1       1     PORTAGE     $213.91     $213.91       1    C            $213.91                       $213.91            
+PLANTS, JASON                104993220399   02/06/2025   ATB      1       1     PORTAGE      $28.29      $28.29       2    C             $56.58                        $56.58            
+PLANTS, JASON                104993220399   02/06/2025   AVH      1       1     PORTAGE      $59.50      $59.50       1    C             $59.50                        $59.50            
+PLANTS, JASON                104993220399   02/07/2025   ASA      1       1     PORTAGE     $213.91     $213.91       1    C            $213.91                       $213.91            
+PLANTS, JASON                104993220399   02/07/2025   ATB      1       1     PORTAGE      $28.29      $28.29       2    C             $56.58                        $56.58            
+PLANTS, JASON                104993220399   02/07/2025   AVH      1       1     PORTAGE      $59.50      $59.50       1    C             $59.50                        $59.50            
+PLANTS, JASON                104993220399   02/08/2025   ASA      1       1     PORTAGE     $213.91     $213.91       1    C            $213.91                       $213.91            
+PLANTS, JASON                104993220399   02/09/2025   ASA      1       1     PORTAGE     $213.91     $213.91       1    C            $213.91                       $213.91            
+PLANTS, JASON                104993220399   02/10/2025   ASA      1       1     PORTAGE     $213.91     $213.91       1    C            $213.91                       $213.91            
+PLANTS, JASON                104993220399   02/10/2025   ATB      1       1     PORTAGE      $28.29      $28.29       2    C             $56.58                        $56.58            
+PLANTS, JASON                104993220399   02/10/2025   AVH      1       1     PORTAGE      $59.50      $59.50       1    C             $59.50                        $59.50            
+PLANTS, JASON                104993220399   02/11/2025   ASA      1       1     PORTAGE     $213.91     $213.91       1    C            $213.91                       $213.91            
+PLANTS, JASON                104993220399   02/11/2025   ATB      1       1     PORTAGE      $28.29      $28.29       2    C             $56.58                        $56.58            
+                                                                        DEPARTMENT OF DEVELOPMENTAL DISABILITIES                                      07:16 Friday, February 14, 2025   2
+                                                                             DIVISION OF INFORMATION SYSTEMS
+                          (MBSDHSTP)                                                                                                                           
+                                                                                 MEDICAID BILLING SYSTEM
+                                                                 TOTAL NET AMOUNT BILLED TO OHIO DEPARTMENT OF MEDICAID
+                                                                       DURING THE CURRENT BILLING CYCLE OF FEB25C
+                                                                      BY CONTRACTOR, PROGRAM, AND MONTH/YEAR BILLED
+
+------------------------- CONTRACT NUMBER=7717591  NAME=MEADOWBROOK SERVICES  PROGRAM=INDIV OPTION WAIVER  YEAR/MONTH BILLED=2025/02   ODM PROV MED NBR=0218025 -------------------------
+
+                                                                                       (continued)
+
+                             MEDICAID                                                                             UNITS                                OTHER              NET     CLAIM
+                             BILLING           SERVICE   SERV   GROUP   STAFF   SERVICE       INPUT      BILLED    OF     CLM            AMOUNT       SOURCE           AMOUNT   REFERENCE
+RECIPIENT NAME               NUMBER               DATE   CODE   SIZE    SIZE    COUNTY         RATE        RATE   SERV    TYPE           BILLED       AMOUNT           BILLED    NUMBER
+
+PLANTS, JASON                104993220399   02/11/2025   AVH      1       1     PORTAGE      $59.50      $59.50       1    C             $59.50                        $59.50            
+SEXTON, ROSALEA              704044655603   02/05/2025   APC      1       1     STARK         $8.34       $8.34      16    C            $133.44                       $133.44            
+SEXTON, ROSALEA              704044655603   02/06/2025   APC      1       1     STARK         $8.34       $8.34      16    C            $133.44                       $133.44            
+SEXTON, ROSALEA              704044655603   02/07/2025   APC      1       1     STARK         $8.34       $8.34      16    C            $133.44                       $133.44            
+SEXTON, ROSALEA              704044655603   02/10/2025   APC      1       1     STARK         $8.34       $8.34      16    C            $133.44                       $133.44            
+SEXTON, ROSALEA              704044655603   02/11/2025   APC      1       1     STARK         $8.34       $8.34      16    C            $133.44                       $133.44            
+--------------------------                                                                                                       --------------   ----------   --------------
+PROGRAM                                                                                                                              $15,199.61        $0.00       $15,199.61            
+
+                                                                                          N = 65
+                                                                        DEPARTMENT OF DEVELOPMENTAL DISABILITIES                                      07:16 Friday, February 14, 2025   3
+                                                                             DIVISION OF INFORMATION SYSTEMS
+                          (MBSDHSTP)                                                                                                                           
+                                                                                 MEDICAID BILLING SYSTEM
+                                                                 TOTAL NET AMOUNT BILLED TO OHIO DEPARTMENT OF MEDICAID
+                                                                       DURING THE CURRENT BILLING CYCLE OF FEB25C
+                                                                      BY CONTRACTOR, PROGRAM, AND MONTH/YEAR BILLED
+
+--------------------------- CONTRACT NUMBER=7717591  NAME=MEADOWBROOK SERVICES  PROGRAM=LEVEL 1 WAIVER  YEAR/MONTH BILLED=2025/02   ODM PROV MED NBR=0218025 ----------------------------
+
+                             MEDICAID                                                                             UNITS                                OTHER              NET     CLAIM
+                             BILLING           SERVICE   SERV   GROUP   STAFF   SERVICE       INPUT      BILLED    OF     CLM            AMOUNT       SOURCE           AMOUNT   REFERENCE
+RECIPIENT NAME               NUMBER               DATE   CODE   SIZE    SIZE    COUNTY         RATE        RATE   SERV    TYPE           BILLED       AMOUNT           BILLED    NUMBER
+
+MASSIE, EDWARD               104644765099   02/05/2025   FDS      1       1     SUMMIT       $59.50      $59.50       1    C             $59.50                        $59.50            
+MASSIE, EDWARD               104644765099   02/05/2025   FTB      1       1     SUMMIT       $28.29      $28.29       2    C             $56.58                        $56.58            
+MASSIE, EDWARD               104644765099   02/06/2025   FDS      1       1     SUMMIT       $59.50      $59.50       1    C             $59.50                        $59.50            
+MASSIE, EDWARD               104644765099   02/06/2025   FTB      1       1     SUMMIT       $28.29      $28.29       2    C             $56.58                        $56.58            
+MASSIE, EDWARD               104644765099   02/07/2025   FDS      1       1     SUMMIT       $59.50      $59.50       1    C             $59.50                        $59.50            
+MASSIE, EDWARD               104644765099   02/07/2025   FTB      1       1     SUMMIT       $28.29      $28.29       2    C             $56.58                        $56.58            
+--------------------------                                                                                                       --------------   ----------   --------------
+PROGRAM                                                                                                                                 $348.24        $0.00          $348.24            
+
+                                                                                          N = 6
+                                                                        DEPARTMENT OF DEVELOPMENTAL DISABILITIES                                      07:16 Friday, February 14, 2025   4
+                                                                             DIVISION OF INFORMATION SYSTEMS
+                          (MBSDHSTP)                                                                                                                           
+                                                                                 MEDICAID BILLING SYSTEM
+                                                                 TOTAL NET AMOUNT BILLED TO OHIO DEPARTMENT OF MEDICAID
+                                                                       DURING THE CURRENT BILLING CYCLE OF FEB25C
+                                                                      BY CONTRACTOR, PROGRAM, AND MONTH/YEAR BILLED
+
+--------------------------------- CONTRACT NUMBER=7717591  NAME=MEADOWBROOK SERVICES  PROGRAM=SLF  YEAR/MONTH BILLED=2025/01   ODM PROV MED NBR=0218025 ---------------------------------
+
+                             MEDICAID                                                                             UNITS                                OTHER              NET     CLAIM
+                             BILLING           SERVICE   SERV   GROUP   STAFF   SERVICE       INPUT      BILLED    OF     CLM            AMOUNT       SOURCE           AMOUNT   REFERENCE
+RECIPIENT NAME               NUMBER               DATE   CODE   SIZE    SIZE    COUNTY         RATE        RATE   SERV    TYPE           BILLED       AMOUNT           BILLED    NUMBER
+
+BRUNTY, JASON                773213113601   01/28/2025   SDC      1       1     SUMMIT        $8.67       $8.67     -25    R           $-216.75        $0.00         $-216.75            
+BRUNTY, JASON                773213113601   01/28/2025   SDC      1       1     SUMMIT        $8.67       $8.67      22    A            $190.74                       $190.74            
+
+                                                                                          N = 2
+
+
+--------------------------------- CONTRACT NUMBER=7717591  NAME=MEADOWBROOK SERVICES  PROGRAM=SLF  YEAR/MONTH BILLED=2025/02   ODM PROV MED NBR=0218025 ---------------------------------
+
+                             MEDICAID                                                                             UNITS                                OTHER              NET     CLAIM
+                             BILLING           SERVICE   SERV   GROUP   STAFF   SERVICE       INPUT      BILLED    OF     CLM            AMOUNT       SOURCE           AMOUNT   REFERENCE
+RECIPIENT NAME               NUMBER               DATE   CODE   SIZE    SIZE    COUNTY         RATE        RATE   SERV    TYPE           BILLED       AMOUNT           BILLED    NUMBER
+
+BRUNTY, JASON                773213113601   02/06/2025   SDC      1       1     SUMMIT        $8.67       $8.67      26    C            $225.42                       $225.42            
+BRUNTY, JASON                773213113601   02/07/2025   SDC      1       1     SUMMIT        $8.67       $8.67      34    C            $294.78                       $294.78            
+BRUNTY, JASON                773213113601   02/10/2025   SDC      1       1     SUMMIT        $8.67       $8.67      25    C            $216.75                       $216.75            
+BRUNTY, JASON                773213113601   02/11/2025   SDC      1       1     SUMMIT        $8.67       $8.67      24    C            $208.08                       $208.08            
+JONES, STEWART               851031828301   02/05/2025   SDC      1       1     SUMMIT        $8.67       $8.67      16    C            $138.72                       $138.72            
+JONES, STEWART               851031828301   02/06/2025   SDC      1       1     SUMMIT        $8.67       $8.67      16    C            $138.72                       $138.72            
+JONES, STEWART               851031828301   02/10/2025   SDC      1       1     SUMMIT        $8.67       $8.67      16    C            $138.72                       $138.72            
+--------------------------                                                                                                       --------------   ----------   --------------
+PROGRAM                                                                                                                               $1,335.18        $0.00        $1,335.18            
+CNTRNAME                                                                                                                             $16,883.03        $0.00       $16,883.03            
+CNTRNUM                                                                                                                              $16,883.03        $0.00       $16,883.03            
+                                                                                                                                 ==============   ==========   ==============
+                                                                                                                                     $16,883.03        $0.00       $16,883.03            
+
+                                                                                        N = 7
+                                                                                  Total N = 80

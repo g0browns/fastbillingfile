@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meadowbrook Audit Dashboard</title>
+    <link rel="stylesheet" href="/frontend/styles.css?v=20260401g" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400" />
+  </head>
+  <body data-theme="dark">
+    <div class="app-shell">
+      <aside class="left-nav card">
+        <div class="brand">
+          <div class="brand-badge">MB</div>
+          <div>
+            <h1>Meadowbrook Audit</h1>
+            <p>Compliance Dashboard</p>
+          </div>
+        </div>
+        <p class="panel-title">Navigation</p>
+        <nav>
+          <a class="nav-link" href="#summary">Executive Summary</a>
+          <a class="nav-link" href="#audit-table">Main Audit Table</a>
+          <a class="nav-link" href="#exceptions">Exception Report</a>
+        </nav>
+
+        <div class="left-nav-footer">
+          <button id="theme-toggle" type="button" aria-label="Toggle color theme">
+            <span id="theme-toggle-label">Switch to Dark</span>
+          </button>
+          <p class="muted">Strict mode enabled</p>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <section class="topbar">
+          <div class="topbar-left">
+            <p class="eyebrow">Operations</p>
+            <h2 id="page-title">HPC Billing &amp; Shift Note Audit Center</h2>
+            <p class="muted" id="page-subtitle">Daily billing-schedule-note reconciliation with strict compliance controls.</p>
+          </div>
+          <div class="topbar-actions">
+            <span class="pill pill-strong">Audit Grade</span>
+            <span class="pill">Deterministic</span>
+            <span class="pill">Shift-Strict</span>
+          </div>
+        </section>
+
+        <section class="controls card">
+          <div class="card-head">
+            <h2>Run Audit</h2>
+            <span class="pill">Upload + Validate</span>
+          </div>
+          <form id="audit-form">
+            <label class="field-billing">
+              Billing File (.TXT)
+              <input id="billing-file" type="file" accept=".txt,.TXT" required />
+            </label>
+            <label class="field-start-date">
+              Start Date
+              <input id="start-date" type="date" required />
+            </label>
+            <label class="field-end-date">
+              End Date
+              <input id="end-date" type="date" required />
+            </label>
+            <label class="field-paper-notes">
+              Paper Notes Clients (exclude from Jotform)
+              <div id="paper-notes-select" class="paper-notes-select">
+                <button id="paper-notes-trigger" class="paper-notes-trigger" type="button" aria-expanded="false">
+                  Paper Notes Clients
+                </button>
+                <div id="paper-notes-panel" class="paper-notes-panel is-hidden">
+                  <div class="paper-notes-actions">
+                    <button id="paper-notes-clear" type="button">Clear all</button>
+                  </div>
+                  <div id="paper-notes-options" class="paper-notes-options">
+                    <p class="muted">Upload a billing file to load client names.</p>
+                  </div>
+                </div>
+              </div>
+            </label>
+            <button id="run-audit" class="field-run-audit" type="submit">Run Audit</button>
+            <div id="report-actions" class="field-report-actions is-hidden">
+              <button id="download-shift-note-pdf" type="button" class="settings-btn">Download Shift Note Audit PDF</button>
+              <button id="download-shift-note-csv" type="button" class="settings-btn">Download Shift Note Audit CSV</button>
+            </div>
+          </form>
+          <p class="muted">Upload one billing TXT file per audit run. Dates auto-populate from file service-date range.</p>
+          <p id="form-message" class="muted"></p>
+          <div id="audit-progress" class="audit-progress is-hidden" aria-live="polite" aria-atomic="true">
+            <div class="audit-progress-head">
+              <span id="audit-progress-text">Running audit...</span>
+              <span id="audit-progress-percent">0%</span>
+            </div>
+            <div class="audit-progress-track">
+              <div id="audit-progress-fill" class="audit-progress-fill"></div>
+            </div>
+          </div>
+        </section>
+
+        <section id="summary" class="kpi-grid">
+          <article class="card kpi"><h3>Total Client-Days</h3><p id="kpi-total">-</p></article>
+          <article class="card kpi"><h3>% Compliant</h3><p id="kpi-pct">-</p></article>
+          <article class="card kpi"><h3>Compliant</h3><p id="kpi-compliant">-</p></article>
+          <article class="card kpi status-critical"><h3>Critical</h3><p id="kpi-critical">-</p></article>
+          <article class="card kpi status-warning"><h3>Warning</h3><p id="kpi-warning">-</p></article>
+          <article class="card kpi status-review"><h3>Review</h3><p id="kpi-review">-</p></article>
+          <article class="card kpi"><h3>Revenue Opportunities</h3><p id="kpi-revenue">-</p></article>
+        </section>
+
+        <section id="audit-table" class="card table-card collapsible-section">
+          <details>
+            <summary class="section-toggle">
+              <h2>Main Audit Queue</h2>
+              <span class="chevron" aria-hidden="true">▾</span>
+            </summary>
+            <div class="section-content">
+              <div class="audit-queue-controls">
+                <label>
+                  Client Search
+                  <input id="queue-client-search" type="text" placeholder="Search client..." />
+                </label>
+                <label>
+                  Scheduled Staff
+                  <select id="queue-staff-filter">
+                    <option value="">All Staff</option>
+                  </select>
+                </label>
+                <label class="queue-missing-toggle">
+                  <input id="queue-missing-only" type="checkbox" />
+                  Missing Notes Only
+                </label>
+              </div>
+              <p id="audit-queue-count" class="muted"></p>
+              <div class="audit-queue-toolbar">
+                <button id="export-followup-csv" type="button" class="settings-btn">Export Follow-up CSV</button>
+                <span id="followup-count" class="muted">Follow-up queue: 0</span>
+              </div>
+              <div id="audit-card-list" class="audit-card-list"></div>
+              <div id="followup-action-list" class="followup-action-list"></div>
+              <div id="main-table-body" class="is-hidden" aria-hidden="true"></div>
+              <div id="main-table" class="is-hidden" aria-hidden="true"></div>
+              <div id="main-table-empty" class="muted is-hidden">
+                No client-day records match the selected filters.
+              </div>
+            </div>
+          </details>
+        </section>
+
+        <section id="exceptions" class="card table-card collapsible-section">
+          <details open>
+            <summary class="section-toggle">
+              <h2>Exception Report</h2>
+              <span class="chevron" aria-hidden="true">▾</span>
+            </summary>
+            <div class="section-content">
+              <ul id="exception-list"></ul>
+            </div>
+          </details>
+        </section>
+
+      </main>
+
+      <aside class="right-panel card">
+        <h2>Detail Panel</h2>
+        <div id="detail-panel" class="detail-panel-body">Select a row to inspect details.</div>
+      </aside>
+    </div>
+
+    <script src="/frontend/app.js?v=20260401g"></script>
+  </body>
+</html>

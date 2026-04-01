@@ -1,0 +1,257 @@
+                                                                        DEPARTMENT OF DEVELOPMENTAL DISABILITIES                                       07:12 Friday, February 7, 2025   1
+                                                                             DIVISION OF INFORMATION SYSTEMS
+                          (MBSDHSTP)                                                                                                                           
+                                                                                 MEDICAID BILLING SYSTEM
+                                                                 TOTAL NET AMOUNT BILLED TO OHIO DEPARTMENT OF MEDICAID
+                                                                       DURING THE CURRENT BILLING CYCLE OF FEB25B
+                                                                      BY CONTRACTOR, PROGRAM, AND MONTH/YEAR BILLED
+
+------------------------- CONTRACT NUMBER=7717591  NAME=MEADOWBROOK SERVICES  PROGRAM=INDIV OPTION WAIVER  YEAR/MONTH BILLED=2024/11   ODM PROV MED NBR=0218025 -------------------------
+
+                             MEDICAID                                                                             UNITS                                OTHER              NET     CLAIM
+                             BILLING           SERVICE   SERV   GROUP   STAFF   SERVICE       INPUT      BILLED    OF     CLM            AMOUNT       SOURCE           AMOUNT   REFERENCE
+RECIPIENT NAME               NUMBER               DATE   CODE   SIZE    SIZE    COUNTY         RATE        RATE   SERV    TYPE           BILLED       AMOUNT           BILLED    NUMBER
+
+COOK, CHRISTOPHER            773235142901   11/29/2024   APC      1       1     SUMMIT        $8.50       $8.50      10    C             $85.00                        $85.00            
+
+                                                                                          N = 1
+
+
+------------------------- CONTRACT NUMBER=7717591  NAME=MEADOWBROOK SERVICES  PROGRAM=INDIV OPTION WAIVER  YEAR/MONTH BILLED=2024/12   ODM PROV MED NBR=0218025 -------------------------
+
+                             MEDICAID                                                                             UNITS                                OTHER              NET     CLAIM
+                             BILLING           SERVICE   SERV   GROUP   STAFF   SERVICE       INPUT      BILLED    OF     CLM            AMOUNT       SOURCE           AMOUNT   REFERENCE
+RECIPIENT NAME               NUMBER               DATE   CODE   SIZE    SIZE    COUNTY         RATE        RATE   SERV    TYPE           BILLED       AMOUNT           BILLED    NUMBER
+
+COOK, CHRISTOPHER            773235142901   12/01/2024   APC      1       1     SUMMIT        $8.50       $8.50      18    C            $153.00                       $153.00            
+COOK, CHRISTOPHER            773235142901   12/02/2024   APC      1       1     SUMMIT        $8.50       $8.50      11    C             $93.50                        $93.50            
+COOK, CHRISTOPHER            773235142901   12/03/2024   APC      1       1     SUMMIT        $8.50       $8.50       2    C             $17.00                        $17.00            
+COOK, CHRISTOPHER            773235142901   12/04/2024   APC      1       1     SUMMIT        $8.50       $8.50      -8    R            $-68.00        $0.00          $-68.00            
+COOK, CHRISTOPHER            773235142901   12/04/2024   APC      1       1     SUMMIT        $8.50       $8.50       5    A             $42.50                        $42.50            
+COOK, CHRISTOPHER            773235142901   12/06/2024   APC      1       1     SUMMIT        $8.50       $8.50      -8    R            $-68.00        $0.00          $-68.00            
+COOK, CHRISTOPHER            773235142901   12/06/2024   APC      1       1     SUMMIT        $8.50       $8.50      26    A            $221.00                       $221.00            
+COOK, CHRISTOPHER            773235142901   12/08/2024   APC      1       1     SUMMIT        $8.50       $8.50      -8    R            $-68.00        $0.00          $-68.00            
+COOK, CHRISTOPHER            773235142901   12/08/2024   APC      1       1     SUMMIT        $8.50       $8.50       9    A             $76.50                        $76.50            
+COOK, CHRISTOPHER            773235142901   12/10/2024   APC      1       1     SUMMIT        $8.50       $8.50      -8    R            $-68.00        $0.00          $-68.00            
+COOK, CHRISTOPHER            773235142901   12/10/2024   APC      1       1     SUMMIT        $8.50       $8.50       9    A             $76.50                        $76.50            
+COOK, CHRISTOPHER            773235142901   12/13/2024   APC      1       1     SUMMIT        $8.50       $8.50      -8    R            $-68.00        $0.00          $-68.00            
+COOK, CHRISTOPHER            773235142901   12/13/2024   APC      1       1     SUMMIT        $8.50       $8.50      16    A            $136.00                       $136.00            
+COOK, CHRISTOPHER            773235142901   12/15/2024   APC      1       1     SUMMIT        $8.50       $8.50      -8    R            $-68.00        $0.00          $-68.00            
+COOK, CHRISTOPHER            773235142901   12/15/2024   APC      1       1     SUMMIT        $8.50       $8.50       1    A              $8.50                         $8.50            
+COOK, CHRISTOPHER            773235142901   12/16/2024   APC      1       1     SUMMIT        $8.50       $8.50      -8    R            $-68.00        $0.00          $-68.00            
+COOK, CHRISTOPHER            773235142901   12/16/2024   APC      1       1     SUMMIT        $8.50       $8.50       5    A             $42.50                        $42.50            
+COOK, CHRISTOPHER            773235142901   12/20/2024   APC      1       1     SUMMIT        $8.50       $8.50      -8    R            $-68.00        $0.00          $-68.00            
+COOK, CHRISTOPHER            773235142901   12/20/2024   APC      1       1     SUMMIT        $8.50       $8.50       7    A             $59.50                        $59.50            
+COOK, CHRISTOPHER            773235142901   12/23/2024   APC      1       1     SUMMIT        $8.50       $8.50      -8    R            $-68.00        $0.00          $-68.00            
+COOK, CHRISTOPHER            773235142901   12/23/2024   APC      1       1     SUMMIT        $8.50       $8.50       4    A             $34.00                        $34.00            
+COOK, CHRISTOPHER            773235142901   12/24/2024   APC      1       1     SUMMIT        $8.50       $8.50      -8    R            $-68.00        $0.00          $-68.00            
+COOK, CHRISTOPHER            773235142901   12/24/2024   APC      1       1     SUMMIT        $8.50       $8.50       3    A             $25.50                        $25.50            
+COOK, CHRISTOPHER            773235142901   12/30/2024   APC      1       1     SUMMIT        $8.50       $8.50      -8    R            $-68.00        $0.00          $-68.00            
+COOK, CHRISTOPHER            773235142901   12/30/2024   APC      1       1     SUMMIT        $8.50       $8.50       7    A             $59.50                        $59.50            
+COOK, CHRISTOPHER            773235142901   12/31/2024   APC      1       1     SUMMIT        $8.50       $8.50      -8    R            $-68.00        $0.00          $-68.00            
+COOK, CHRISTOPHER            773235142901   12/31/2024   APC      1       1     SUMMIT        $8.50       $8.50       3    A             $25.50                        $25.50            
+
+                                                                                          N = 27
+
+
+------------------------- CONTRACT NUMBER=7717591  NAME=MEADOWBROOK SERVICES  PROGRAM=INDIV OPTION WAIVER  YEAR/MONTH BILLED=2025/01   ODM PROV MED NBR=0218025 -------------------------
+
+                             MEDICAID                                                                             UNITS                                OTHER              NET     CLAIM
+                             BILLING           SERVICE   SERV   GROUP   STAFF   SERVICE       INPUT      BILLED    OF     CLM            AMOUNT       SOURCE           AMOUNT   REFERENCE
+RECIPIENT NAME               NUMBER               DATE   CODE   SIZE    SIZE    COUNTY         RATE        RATE   SERV    TYPE           BILLED       AMOUNT           BILLED    NUMBER
+
+COHN, MARTIN                 105973135499   01/29/2025   APC      1       1     SUMMIT        $8.50       $8.50      44    C            $374.00                       $374.00            
+COHN, MARTIN                 105973135499   01/30/2025   APC      1       1     SUMMIT        $8.50       $8.50      44    C            $374.00                       $374.00            
+COHN, MARTIN                 105973135499   01/31/2025   APC      1       1     SUMMIT        $8.50       $8.50      44    C            $374.00                       $374.00            
+COOK, CHRISTOPHER            773235142901   01/01/2025   APC      1       1     SUMMIT        $8.50       $8.50       4    C             $34.00                        $34.00            
+COOK, CHRISTOPHER            773235142901   01/03/2025   APC      1       1     SUMMIT        $8.50       $8.50      -8    R            $-68.00        $0.00          $-68.00            
+COOK, CHRISTOPHER            773235142901   01/03/2025   APC      1       1     SUMMIT        $8.50       $8.50       2    A             $17.00                        $17.00            
+COOK, CHRISTOPHER            773235142901   01/04/2025   APC      1       1     SUMMIT        $8.50       $8.50       7    C             $59.50                        $59.50            
+EMANUELE, PATRICIA           773163918801   01/29/2025   APC      1       1     SUMMIT        $8.50       $8.50      12    C            $102.00                       $102.00            
+EMANUELE, PATRICIA           773163918801   01/29/2025   ATB      1       1     SUMMIT       $28.29      $28.29       2    C             $56.58                        $56.58            
+EMANUELE, PATRICIA           773163918801   01/29/2025   AVH      1       1     SUMMIT       $59.50      $59.50       1    C             $59.50                        $59.50            
+EMANUELE, PATRICIA           773163918801   01/30/2025   APC      1       1     SUMMIT        $8.50       $8.50      14    C            $119.00                       $119.00            
+                                                                        DEPARTMENT OF DEVELOPMENTAL DISABILITIES                                       07:12 Friday, February 7, 2025   2
+                                                                             DIVISION OF INFORMATION SYSTEMS
+                          (MBSDHSTP)                                                                                                                           
+                                                                                 MEDICAID BILLING SYSTEM
+                                                                 TOTAL NET AMOUNT BILLED TO OHIO DEPARTMENT OF MEDICAID
+                                                                       DURING THE CURRENT BILLING CYCLE OF FEB25B
+                                                                      BY CONTRACTOR, PROGRAM, AND MONTH/YEAR BILLED
+
+------------------------- CONTRACT NUMBER=7717591  NAME=MEADOWBROOK SERVICES  PROGRAM=INDIV OPTION WAIVER  YEAR/MONTH BILLED=2025/01   ODM PROV MED NBR=0218025 -------------------------
+
+                                                                                       (continued)
+
+                             MEDICAID                                                                             UNITS                                OTHER              NET     CLAIM
+                             BILLING           SERVICE   SERV   GROUP   STAFF   SERVICE       INPUT      BILLED    OF     CLM            AMOUNT       SOURCE           AMOUNT   REFERENCE
+RECIPIENT NAME               NUMBER               DATE   CODE   SIZE    SIZE    COUNTY         RATE        RATE   SERV    TYPE           BILLED       AMOUNT           BILLED    NUMBER
+
+EMANUELE, PATRICIA           773163918801   01/30/2025   ATB      1       1     SUMMIT       $28.29      $28.29       2    C             $56.58                        $56.58            
+EMANUELE, PATRICIA           773163918801   01/30/2025   AVH      1       1     SUMMIT       $59.50      $59.50       1    C             $59.50                        $59.50            
+EMANUELE, PATRICIA           773163918801   01/31/2025   APC      1       1     SUMMIT        $8.50       $8.50      12    C            $102.00                       $102.00            
+EMANUELE, PATRICIA           773163918801   01/31/2025   ATB      1       1     SUMMIT       $28.29      $28.29       2    C             $56.58                        $56.58            
+EMANUELE, PATRICIA           773163918801   01/31/2025   AVH      1       1     SUMMIT       $59.50      $59.50       1    C             $59.50                        $59.50            
+FORD, SARAH                  104750086199   01/29/2025   APC      1       1     SUMMIT        $8.50       $8.50      32    C            $272.00                       $272.00            
+FORD, SARAH                  104750086199   01/30/2025   APC      1       1     SUMMIT        $8.50       $8.50      28    C            $238.00                       $238.00            
+FORD, SARAH                  104750086199   01/31/2025   APC      1       1     SUMMIT        $8.50       $8.50      32    C            $272.00                       $272.00            
+FRYMIER, GAGE                105526221499   01/29/2025   ADS      1       1     SUMMIT       $59.50      $59.50       1    C             $59.50                        $59.50            
+FRYMIER, GAGE                105526221499   01/29/2025   ATB      1       1     SUMMIT       $28.29      $28.29       2    C             $56.58                        $56.58            
+FRYMIER, GAGE                105526221499   01/31/2025   ADS      1       1     SUMMIT       $59.50      $59.50       1    C             $59.50                        $59.50            
+HAYS, CARI                   773163777801   01/29/2025   APC      1       1     SUMMIT        $8.50       $8.50      96    C            $816.00                       $816.00            
+HAYS, CARI                   773163777801   01/30/2025   APC      1       1     SUMMIT        $8.50       $8.50      96    C            $816.00                       $816.00            
+HAYS, CARI                   773163777801   01/31/2025   APC      1       1     SUMMIT        $8.50       $8.50      96    C            $816.00                       $816.00            
+ILER, KATIE                  106432048299   01/29/2025   AEE      1       1     SUMMIT       $16.50      $16.50      16    C            $264.00                       $264.00            
+ILER, KATIE                  106432048299   01/29/2025   APC      1       1     SUMMIT        $8.50       $8.50      16    C            $136.00                       $136.00            
+ILER, KATIE                  106432048299   01/29/2025   ATB      1       1     SUMMIT       $28.29      $28.29       2    C             $56.58                        $56.58            
+ILER, KATIE                  106432048299   01/30/2025   AEE      1       1     SUMMIT       $16.50      $16.50       4    C             $66.00                        $66.00            
+ILER, KATIE                  106432048299   01/30/2025   APC      1       1     SUMMIT        $8.50       $8.50      28    C            $238.00                       $238.00            
+ILER, KATIE                  106432048299   01/30/2025   ATB      1       1     SUMMIT       $28.29      $28.29       2    C             $56.58                        $56.58            
+ILER, KATIE                  106432048299   01/31/2025   APC      1       1     SUMMIT        $8.50       $8.50      32    C            $272.00                       $272.00            
+PLANTS, JASON                104993220399   01/29/2025   ASA      1       1     PORTAGE     $213.91     $213.91       1    C            $213.91                       $213.91            
+PLANTS, JASON                104993220399   01/29/2025   ATB      1       1     PORTAGE      $28.29      $28.29       2    C             $56.58                        $56.58            
+PLANTS, JASON                104993220399   01/29/2025   AVH      1       1     PORTAGE      $59.50      $59.50       1    C             $59.50                        $59.50            
+PLANTS, JASON                104993220399   01/30/2025   ASA      1       1     PORTAGE     $213.91     $213.91       1    C            $213.91                       $213.91            
+PLANTS, JASON                104993220399   01/30/2025   ATB      1       1     PORTAGE      $28.29      $28.29       2    C             $56.58                        $56.58            
+PLANTS, JASON                104993220399   01/30/2025   AVH      1       1     PORTAGE      $59.50      $59.50       1    C             $59.50                        $59.50            
+PLANTS, JASON                104993220399   01/31/2025   ASA      1       1     PORTAGE     $213.91     $213.91       1    C            $213.91                       $213.91            
+PLANTS, JASON                104993220399   01/31/2025   ATB      1       1     PORTAGE      $28.29      $28.29       2    C             $56.58                        $56.58            
+PLANTS, JASON                104993220399   01/31/2025   AVH      1       1     PORTAGE      $59.50      $59.50       1    C             $59.50                        $59.50            
+SEXTON, ROSALEA              704044655603   01/29/2025   APC      1       1     STARK         $8.34       $8.34      16    C            $133.44                       $133.44            
+SEXTON, ROSALEA              704044655603   01/30/2025   APC      1       1     STARK         $8.34       $8.34      16    C            $133.44                       $133.44            
+SEXTON, ROSALEA              704044655603   01/31/2025   APC      1       1     STARK         $8.34       $8.34      16    C            $133.44                       $133.44            
+
+                                                                                          N = 44
+
+
+------------------------- CONTRACT NUMBER=7717591  NAME=MEADOWBROOK SERVICES  PROGRAM=INDIV OPTION WAIVER  YEAR/MONTH BILLED=2025/02   ODM PROV MED NBR=0218025 -------------------------
+
+                             MEDICAID                                                                             UNITS                                OTHER              NET     CLAIM
+                             BILLING           SERVICE   SERV   GROUP   STAFF   SERVICE       INPUT      BILLED    OF     CLM            AMOUNT       SOURCE           AMOUNT   REFERENCE
+RECIPIENT NAME               NUMBER               DATE   CODE   SIZE    SIZE    COUNTY         RATE        RATE   SERV    TYPE           BILLED       AMOUNT           BILLED    NUMBER
+
+BLOOM, CRISTEN               873016751001   02/04/2025   AEE      1       1     SUMMIT       $16.50      $16.50       8    C            $132.00                       $132.00            
+COHN, MARTIN                 105973135499   02/01/2025   APC      1       1     SUMMIT        $8.50       $8.50      64    C            $544.00                       $544.00            
+COHN, MARTIN                 105973135499   02/02/2025   APC      1       1     SUMMIT        $8.50       $8.50      64    C            $544.00                       $544.00            
+COHN, MARTIN                 105973135499   02/04/2025   APC      1       1     SUMMIT        $8.50       $8.50      44    C            $374.00                       $374.00            
+EMANUELE, PATRICIA           773163918801   02/02/2025   APC      1       1     SUMMIT        $8.50       $8.50      32    C            $272.00                       $272.00            
+EMANUELE, PATRICIA           773163918801   02/04/2025   APC      1       1     SUMMIT        $8.50       $8.50      12    C            $102.00                       $102.00            
+EMANUELE, PATRICIA           773163918801   02/04/2025   ATB      1       1     SUMMIT       $28.29      $28.29       2    C             $56.58                        $56.58            
+EMANUELE, PATRICIA           773163918801   02/04/2025   AVH      1       1     SUMMIT       $59.50      $59.50       1    C             $59.50                        $59.50            
+FORD, SARAH                  104750086199   02/03/2025   APC      1       1     SUMMIT        $8.50       $8.50      32    C            $272.00                       $272.00            
+FORD, SARAH                  104750086199   02/04/2025   APC      1       1     SUMMIT        $8.50       $8.50      32    C            $272.00                       $272.00            
+FRYMIER, GAGE                105526221499   02/03/2025   ADS      1       1     SUMMIT       $59.50      $59.50       1    C             $59.50                        $59.50            
+FRYMIER, GAGE                105526221499   02/03/2025   ATB      1       1     SUMMIT       $28.29      $28.29       2    C             $56.58                        $56.58            
+HAYS, CARI                   773163777801   02/01/2025   APC      1       1     SUMMIT        $8.50       $8.50      96    C            $816.00                       $816.00            
+                                                                        DEPARTMENT OF DEVELOPMENTAL DISABILITIES                                       07:12 Friday, February 7, 2025   3
+                                                                             DIVISION OF INFORMATION SYSTEMS
+                          (MBSDHSTP)                                                                                                                           
+                                                                                 MEDICAID BILLING SYSTEM
+                                                                 TOTAL NET AMOUNT BILLED TO OHIO DEPARTMENT OF MEDICAID
+                                                                       DURING THE CURRENT BILLING CYCLE OF FEB25B
+                                                                      BY CONTRACTOR, PROGRAM, AND MONTH/YEAR BILLED
+
+------------------------- CONTRACT NUMBER=7717591  NAME=MEADOWBROOK SERVICES  PROGRAM=INDIV OPTION WAIVER  YEAR/MONTH BILLED=2025/02   ODM PROV MED NBR=0218025 -------------------------
+
+                                                                                       (continued)
+
+                             MEDICAID                                                                             UNITS                                OTHER              NET     CLAIM
+                             BILLING           SERVICE   SERV   GROUP   STAFF   SERVICE       INPUT      BILLED    OF     CLM            AMOUNT       SOURCE           AMOUNT   REFERENCE
+RECIPIENT NAME               NUMBER               DATE   CODE   SIZE    SIZE    COUNTY         RATE        RATE   SERV    TYPE           BILLED       AMOUNT           BILLED    NUMBER
+
+HAYS, CARI                   773163777801   02/02/2025   APC      1       1     SUMMIT        $8.50       $8.50      96    C            $816.00                       $816.00            
+HAYS, CARI                   773163777801   02/03/2025   APC      1       1     SUMMIT        $8.50       $8.50      96    C            $816.00                       $816.00            
+HAYS, CARI                   773163777801   02/04/2025   APC      1       1     SUMMIT        $8.50       $8.50      96    C            $816.00                       $816.00            
+ILER, KATIE                  106432048299   02/03/2025   APC      1       1     SUMMIT        $8.50       $8.50      28    C            $238.00                       $238.00            
+ILER, KATIE                  106432048299   02/04/2025   APC      1       1     SUMMIT        $8.50       $8.50      32    C            $272.00                       $272.00            
+PLANTS, JASON                104993220399   02/01/2025   ASA      1       1     PORTAGE     $213.91     $213.91       1    C            $213.91                       $213.91            
+PLANTS, JASON                104993220399   02/02/2025   ASA      1       1     PORTAGE     $213.91     $213.91       1    C            $213.91                       $213.91            
+PLANTS, JASON                104993220399   02/03/2025   ASA      1       1     PORTAGE     $213.91     $213.91       1    C            $213.91                       $213.91            
+PLANTS, JASON                104993220399   02/03/2025   ATB      1       1     PORTAGE      $28.29      $28.29       2    C             $56.58                        $56.58            
+PLANTS, JASON                104993220399   02/03/2025   AVH      1       1     PORTAGE      $59.50      $59.50       1    C             $59.50                        $59.50            
+PLANTS, JASON                104993220399   02/04/2025   ASA      1       1     PORTAGE     $213.91     $213.91       1    C            $213.91                       $213.91            
+PLANTS, JASON                104993220399   02/04/2025   ATB      1       1     PORTAGE      $28.29      $28.29       2    C             $56.58                        $56.58            
+PLANTS, JASON                104993220399   02/04/2025   AVH      1       1     PORTAGE      $59.50      $59.50       1    C             $59.50                        $59.50            
+SEXTON, ROSALEA              704044655603   02/03/2025   APC      1       1     STARK         $8.34       $8.34      16    C            $133.44                       $133.44            
+SEXTON, ROSALEA              704044655603   02/04/2025   APC      1       1     STARK         $8.34       $8.34      16    C            $133.44                       $133.44            
+--------------------------                                                                                                       --------------   ----------   --------------
+PROGRAM                                                                                                                              $15,933.61        $0.00       $15,933.61            
+
+                                                                                          N = 28
+                                                                        DEPARTMENT OF DEVELOPMENTAL DISABILITIES                                       07:12 Friday, February 7, 2025   4
+                                                                             DIVISION OF INFORMATION SYSTEMS
+                          (MBSDHSTP)                                                                                                                           
+                                                                                 MEDICAID BILLING SYSTEM
+                                                                 TOTAL NET AMOUNT BILLED TO OHIO DEPARTMENT OF MEDICAID
+                                                                       DURING THE CURRENT BILLING CYCLE OF FEB25B
+                                                                      BY CONTRACTOR, PROGRAM, AND MONTH/YEAR BILLED
+
+--------------------------- CONTRACT NUMBER=7717591  NAME=MEADOWBROOK SERVICES  PROGRAM=LEVEL 1 WAIVER  YEAR/MONTH BILLED=2025/01   ODM PROV MED NBR=0218025 ----------------------------
+
+                             MEDICAID                                                                             UNITS                                OTHER              NET     CLAIM
+                             BILLING           SERVICE   SERV   GROUP   STAFF   SERVICE       INPUT      BILLED    OF     CLM            AMOUNT       SOURCE           AMOUNT   REFERENCE
+RECIPIENT NAME               NUMBER               DATE   CODE   SIZE    SIZE    COUNTY         RATE        RATE   SERV    TYPE           BILLED       AMOUNT           BILLED    NUMBER
+
+BALISHIN, MICHAEL            910001000683   01/30/2025   FEE      1       1     SUMMIT       $16.50      $16.50      16    C            $264.00                       $264.00            
+BALISHIN, MICHAEL            910001000683   01/30/2025   FPC      1       1     SUMMIT        $8.50       $8.50      20    C            $170.00                       $170.00            
+BALISHIN, MICHAEL            910001000683   01/30/2025   FTB      1       1     SUMMIT       $28.29      $28.29       2    C             $56.58                        $56.58            
+MASSIE, EDWARD               104644765099   01/29/2025   FDS      1       1     SUMMIT       $59.50      $59.50       1    C             $59.50                        $59.50            
+MASSIE, EDWARD               104644765099   01/29/2025   FTB      1       1     SUMMIT       $28.29      $28.29       2    C             $56.58                        $56.58            
+MASSIE, EDWARD               104644765099   01/31/2025   FDS      1       1     SUMMIT       $59.50      $59.50       1    C             $59.50                        $59.50            
+MASSIE, EDWARD               104644765099   01/31/2025   FTB      1       1     SUMMIT       $28.29      $28.29       2    C             $56.58                        $56.58            
+TRAVIS, JONTE                106548737199   01/29/2025   FEE      1       1     SUMMIT       $16.50      $16.50      18    C            $297.00                       $297.00            
+
+                                                                                          N = 8
+
+
+--------------------------- CONTRACT NUMBER=7717591  NAME=MEADOWBROOK SERVICES  PROGRAM=LEVEL 1 WAIVER  YEAR/MONTH BILLED=2025/02   ODM PROV MED NBR=0218025 ----------------------------
+
+                             MEDICAID                                                                             UNITS                                OTHER              NET     CLAIM
+                             BILLING           SERVICE   SERV   GROUP   STAFF   SERVICE       INPUT      BILLED    OF     CLM            AMOUNT       SOURCE           AMOUNT   REFERENCE
+RECIPIENT NAME               NUMBER               DATE   CODE   SIZE    SIZE    COUNTY         RATE        RATE   SERV    TYPE           BILLED       AMOUNT           BILLED    NUMBER
+
+BALISHIN, MICHAEL            910001000683   02/01/2025   FPC      1       1     SUMMIT        $8.50       $8.50      20    C            $170.00                       $170.00            
+MASSIE, EDWARD               104644765099   02/04/2025   FDS      1       1     SUMMIT       $59.50      $59.50       1    C             $59.50                        $59.50            
+MASSIE, EDWARD               104644765099   02/04/2025   FTB      1       1     SUMMIT       $28.29      $28.29       2    C             $56.58                        $56.58            
+--------------------------                                                                                                       --------------   ----------   --------------
+PROGRAM                                                                                                                               $1,305.82        $0.00        $1,305.82            
+
+                                                                                          N = 3
+                                                                        DEPARTMENT OF DEVELOPMENTAL DISABILITIES                                       07:12 Friday, February 7, 2025   5
+                                                                             DIVISION OF INFORMATION SYSTEMS
+                          (MBSDHSTP)                                                                                                                           
+                                                                                 MEDICAID BILLING SYSTEM
+                                                                 TOTAL NET AMOUNT BILLED TO OHIO DEPARTMENT OF MEDICAID
+                                                                       DURING THE CURRENT BILLING CYCLE OF FEB25B
+                                                                      BY CONTRACTOR, PROGRAM, AND MONTH/YEAR BILLED
+
+--------------------------------- CONTRACT NUMBER=7717591  NAME=MEADOWBROOK SERVICES  PROGRAM=SLF  YEAR/MONTH BILLED=2025/01   ODM PROV MED NBR=0218025 ---------------------------------
+
+                             MEDICAID                                                                             UNITS                                OTHER              NET     CLAIM
+                             BILLING           SERVICE   SERV   GROUP   STAFF   SERVICE       INPUT      BILLED    OF     CLM            AMOUNT       SOURCE           AMOUNT   REFERENCE
+RECIPIENT NAME               NUMBER               DATE   CODE   SIZE    SIZE    COUNTY         RATE        RATE   SERV    TYPE           BILLED       AMOUNT           BILLED    NUMBER
+
+BRUNTY, JASON                773213113601   01/30/2025   SDC      1       1     SUMMIT        $8.67       $8.67      23    C            $199.41                       $199.41            
+BRUNTY, JASON                773213113601   01/31/2025   SDC      1       1     SUMMIT        $8.67       $8.67      27    C            $234.09                       $234.09            
+JONES, STEWART               851031828301   01/29/2025   SDC      1       1     SUMMIT        $8.67       $8.67      16    C            $138.72                       $138.72            
+JONES, STEWART               851031828301   01/30/2025   SDC      1       1     SUMMIT        $8.67       $8.67      16    C            $138.72                       $138.72            
+
+                                                                                          N = 4
+
+
+--------------------------------- CONTRACT NUMBER=7717591  NAME=MEADOWBROOK SERVICES  PROGRAM=SLF  YEAR/MONTH BILLED=2025/02   ODM PROV MED NBR=0218025 ---------------------------------
+
+                             MEDICAID                                                                             UNITS                                OTHER              NET     CLAIM
+                             BILLING           SERVICE   SERV   GROUP   STAFF   SERVICE       INPUT      BILLED    OF     CLM            AMOUNT       SOURCE           AMOUNT   REFERENCE
+RECIPIENT NAME               NUMBER               DATE   CODE   SIZE    SIZE    COUNTY         RATE        RATE   SERV    TYPE           BILLED       AMOUNT           BILLED    NUMBER
+
+JONES, STEWART               851031828301   02/03/2025   SDC      1       1     SUMMIT        $8.67       $8.67      16    C            $138.72                       $138.72            
+--------------------------                                                                                                       --------------   ----------   --------------
+PROGRAM                                                                                                                                 $849.66        $0.00          $849.66            
+CNTRNAME                                                                                                                             $18,089.09        $0.00       $18,089.09            
+CNTRNUM                                                                                                                              $18,089.09        $0.00       $18,089.09            
+                                                                                                                                 ==============   ==========   ==============
+                                                                                                                                     $18,089.09        $0.00       $18,089.09            
+
+                                                                                        N = 1
+                                                                                  Total N = 116

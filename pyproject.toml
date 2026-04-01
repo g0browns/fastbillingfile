@@ -1,0 +1,37 @@
+[project]
+name = "meadowbrook-audit"
+version = "0.1.0"
+description = "Deterministic compliance audit engine for billing, schedule, and shift notes."
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.115.0",
+  "pydantic>=2.9.0",
+  "python-multipart",
+  "python-dateutil>=2.9.0",
+  "requests>=2.32.0",
+  "reportlab>=4.4.10",
+  "openpyxl>=3.1.5",
+  "XlsxWriter>=3.2.9",
+  "uvicorn>=0.30.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.3.0",
+]
+
+[project.scripts]
+meadowbrook-audit = "audit_engine.cli:main"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

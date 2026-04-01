@@ -1,0 +1,13 @@
+services:
+  shiftnotes:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: shiftnotes-app
+    env_file:
+      - .env
+    ports:
+      - "8000:8001"
+    restart: unless-stopped
+    volumes:
+      - ./output:/app/output

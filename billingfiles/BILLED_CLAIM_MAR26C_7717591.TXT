@@ -1,0 +1,215 @@
+                                                                        DEPARTMENT OF DEVELOPMENTAL DISABILITIES                                         08:10 Friday, March 13, 2026   1
+                                                                             DIVISION OF INFORMATION SYSTEMS
+                          (MBSDHSTP)                                                                                                                           
+                                                                                 MEDICAID BILLING SYSTEM
+                                                                 TOTAL NET AMOUNT BILLED TO OHIO DEPARTMENT OF MEDICAID
+                                                                       DURING THE CURRENT BILLING CYCLE OF MAR26C
+                                                                      BY CONTRACTOR, PROGRAM, AND MONTH/YEAR BILLED
+
+------------------------- CONTRACT NUMBER=7717591  NAME=MEADOWBROOK SERVICES  PROGRAM=INDIV OPTION WAIVER  YEAR/MONTH BILLED=2026/02   ODM PROV MED NBR=0218025 -------------------------
+
+                             MEDICAID                                                                             UNITS                                OTHER              NET     CLAIM
+                             BILLING           SERVICE   SERV   GROUP   STAFF   SERVICE       INPUT      BILLED    OF     CLM            AMOUNT       SOURCE           AMOUNT   REFERENCE
+RECIPIENT NAME               NUMBER               DATE   CODE   SIZE    SIZE    COUNTY         RATE        RATE   SERV    TYPE           BILLED       AMOUNT           BILLED    NUMBER
+
+FORD, SARAH                  104750086199   02/14/2026   APC      1       1     SUMMIT        $8.50       $8.50      96    C            $816.00                       $816.00            
+
+                                                                                          N = 1
+
+
+------------------------- CONTRACT NUMBER=7717591  NAME=MEADOWBROOK SERVICES  PROGRAM=INDIV OPTION WAIVER  YEAR/MONTH BILLED=2026/03   ODM PROV MED NBR=0218025 -------------------------
+
+                             MEDICAID                                                                             UNITS                                OTHER              NET     CLAIM
+                             BILLING           SERVICE   SERV   GROUP   STAFF   SERVICE       INPUT      BILLED    OF     CLM            AMOUNT       SOURCE           AMOUNT   REFERENCE
+RECIPIENT NAME               NUMBER               DATE   CODE   SIZE    SIZE    COUNTY         RATE        RATE   SERV    TYPE           BILLED       AMOUNT           BILLED    NUMBER
+
+BLOOM, CRISTEN               873016751001   03/06/2026   AEE      1       1     SUMMIT       $16.50      $16.50      16    C            $264.00                       $264.00            
+COHN, MARTIN                 105973135499   03/03/2026   ASA      1       1     PORTAGE     $213.91     $213.91       1    C            $213.91                       $213.91            
+COHN, MARTIN                 105973135499   03/04/2026   ASA      1       1     PORTAGE     $213.91     $213.91       1    C            $213.91                       $213.91            
+COHN, MARTIN                 105973135499   03/05/2026   ASA      1       1     PORTAGE     $213.91     $213.91       1    C            $213.91                       $213.91            
+COHN, MARTIN                 105973135499   03/06/2026   ASA      1       1     PORTAGE     $213.91     $213.91       1    C            $213.91                       $213.91            
+COHN, MARTIN                 105973135499   03/07/2026   ASA      1       1     PORTAGE     $213.91     $213.91       1    C            $213.91                       $213.91            
+COHN, MARTIN                 105973135499   03/08/2026   ASA      1       1     PORTAGE     $213.91     $213.91       1    C            $213.91                       $213.91            
+COHN, MARTIN                 105973135499   03/09/2026   ASA      1       1     PORTAGE     $213.91     $213.91       1    C            $213.91                       $213.91            
+COOK, CHRISTOPHER            773235142901   03/03/2026   APC      1       1     SUMMIT        $8.50       $8.50      96    C            $816.00                       $816.00            
+COOK, CHRISTOPHER            773235142901   03/04/2026   APC      1       1     SUMMIT        $8.50       $8.50      96    C            $816.00                       $816.00            
+COOK, CHRISTOPHER            773235142901   03/05/2026   APC      1       1     SUMMIT        $8.50       $8.50      96    C            $816.00                       $816.00            
+COOK, CHRISTOPHER            773235142901   03/06/2026   APC      1       1     SUMMIT        $8.50       $8.50      96    C            $816.00                       $816.00            
+COOK, CHRISTOPHER            773235142901   03/07/2026   APC      1       1     SUMMIT        $8.50       $8.50      96    C            $816.00                       $816.00            
+COOK, CHRISTOPHER            773235142901   03/09/2026   APC      1       1     SUMMIT        $8.50       $8.50      96    C            $816.00                       $816.00            
+COX, LOGAN                   107445063499   03/09/2026   AEE      1       1     SUMMIT       $16.50      $16.50       8    C            $132.00                       $132.00            
+EMANUELE, PATRICIA           773163918801   03/03/2026   ADS      1       1     SUMMIT       $59.50      $59.50       1    C             $59.50                        $59.50            
+EMANUELE, PATRICIA           773163918801   03/03/2026   APC      1       1     SUMMIT        $8.50       $8.50      12    C            $102.00                       $102.00            
+EMANUELE, PATRICIA           773163918801   03/03/2026   ATB      1       1     SUMMIT       $28.29      $28.29       2    C             $56.58                        $56.58            
+EMANUELE, PATRICIA           773163918801   03/04/2026   ADS      1       1     SUMMIT       $59.50      $59.50       1    C             $59.50                        $59.50            
+EMANUELE, PATRICIA           773163918801   03/04/2026   APC      1       1     SUMMIT        $8.50       $8.50      12    C            $102.00                       $102.00            
+EMANUELE, PATRICIA           773163918801   03/04/2026   ATB      1       1     SUMMIT       $28.29      $28.29       2    C             $56.58                        $56.58            
+EMANUELE, PATRICIA           773163918801   03/05/2026   ADS      1       1     SUMMIT       $59.50      $59.50       1    C             $59.50                        $59.50            
+EMANUELE, PATRICIA           773163918801   03/05/2026   APC      1       1     SUMMIT        $8.50       $8.50      12    C            $102.00                       $102.00            
+EMANUELE, PATRICIA           773163918801   03/05/2026   ATB      1       1     SUMMIT      $213.91      $28.29       2    C             $56.58                        $56.58            
+EMANUELE, PATRICIA           773163918801   03/06/2026   ADT      1       1     SUMMIT        $7.15       $7.15      20    C            $143.00                       $143.00            
+EMANUELE, PATRICIA           773163918801   03/06/2026   APC      1       1     SUMMIT        $8.50       $8.50      12    C            $102.00                       $102.00            
+EMANUELE, PATRICIA           773163918801   03/06/2026   ATB      1       1     SUMMIT      $213.91      $28.29       2    C             $56.58                        $56.58            
+EMANUELE, PATRICIA           773163918801   03/08/2026   APC      1       1     SUMMIT        $8.50       $8.50      36    C            $306.00                       $306.00            
+EMANUELE, PATRICIA           773163918801   03/09/2026   APC      1       1     SUMMIT        $8.50       $8.50      12    C            $102.00                       $102.00            
+FORD, SARAH                  104750086199   03/05/2026   APC      1       1     SUMMIT        $8.50       $8.50      74    C            $629.00                       $629.00            
+FORD, SARAH                  104750086199   03/06/2026   APC      1       1     SUMMIT        $8.50       $8.50      96    C            $816.00                       $816.00            
+FORD, SARAH                  104750086199   03/07/2026   APC      1       1     SUMMIT        $8.50       $8.50      96    C            $816.00                       $816.00            
+FORD, SARAH                  104750086199   03/09/2026   APC      1       1     SUMMIT        $8.50       $8.50      22    C            $187.00                       $187.00            
+FRYMIER, GAGE                105526221499   03/03/2026   ADL                    SUMMIT      $730.59     $730.59       1    C            $730.59                       $730.59      000   
+FRYMIER, GAGE                105526221499   03/04/2026   ADL                    SUMMIT      $730.59     $730.59       1    C            $730.59                       $730.59      000   
+FRYMIER, GAGE                105526221499   03/05/2026   ADL                    SUMMIT      $730.59     $730.59       1    C            $730.59                       $730.59      000   
+FRYMIER, GAGE                105526221499   03/06/2026   ADL                    SUMMIT      $730.59     $730.59       1    C            $730.59                       $730.59      000   
+FRYMIER, GAGE                105526221499   03/07/2026   ADL                    SUMMIT      $730.59     $730.59       1    C            $730.59                       $730.59      000   
+FRYMIER, GAGE                105526221499   03/08/2026   ADL                    SUMMIT      $730.59     $730.59       1    C            $730.59                       $730.59      000   
+FRYMIER, GAGE                105526221499   03/09/2026   ADL                    SUMMIT      $730.59     $730.59       1    C            $730.59                       $730.59      000   
+GOUVAS, LORENA               109411793299   03/03/2026   ADL                    SUMMIT      $308.01     $308.01       1    C            $308.01                       $308.01      000   
+GOUVAS, LORENA               109411793299   03/04/2026   ADL                    SUMMIT      $308.01     $308.01       1    C            $308.01                       $308.01      000   
+GOUVAS, LORENA               109411793299   03/05/2026   ADL                    SUMMIT      $308.01     $308.01       1    C            $308.01                       $308.01      000   
+GOUVAS, LORENA               109411793299   03/06/2026   ADL                    SUMMIT      $308.01     $308.01       1    C            $308.01                       $308.01      000   
+GOUVAS, LORENA               109411793299   03/07/2026   ADL                    SUMMIT      $308.01     $308.01       1    C            $308.01                       $308.01      000   
+GOUVAS, LORENA               109411793299   03/08/2026   ADL                    SUMMIT      $308.01     $308.01       1    C            $308.01                       $308.01      000   
+GOUVAS, LORENA               109411793299   03/09/2026   ADL                    SUMMIT      $308.01     $308.01       1    C            $308.01                       $308.01      000   
+HOLSTEIN, RICHARD            773160920701   03/02/2026   ADF      1       1     SUMMIT        $2.38       $2.38      20    C             $47.60                        $47.60            
+                                                                        DEPARTMENT OF DEVELOPMENTAL DISABILITIES                                         08:10 Friday, March 13, 2026   2
+                                                                             DIVISION OF INFORMATION SYSTEMS
+                          (MBSDHSTP)                                                                                                                           
+                                                                                 MEDICAID BILLING SYSTEM
+                                                                 TOTAL NET AMOUNT BILLED TO OHIO DEPARTMENT OF MEDICAID
+                                                                       DURING THE CURRENT BILLING CYCLE OF MAR26C
+                                                                      BY CONTRACTOR, PROGRAM, AND MONTH/YEAR BILLED
+
+------------------------- CONTRACT NUMBER=7717591  NAME=MEADOWBROOK SERVICES  PROGRAM=INDIV OPTION WAIVER  YEAR/MONTH BILLED=2026/03   ODM PROV MED NBR=0218025 -------------------------
+
+                                                                                       (continued)
+
+                             MEDICAID                                                                             UNITS                                OTHER              NET     CLAIM
+                             BILLING           SERVICE   SERV   GROUP   STAFF   SERVICE       INPUT      BILLED    OF     CLM            AMOUNT       SOURCE           AMOUNT   REFERENCE
+RECIPIENT NAME               NUMBER               DATE   CODE   SIZE    SIZE    COUNTY         RATE        RATE   SERV    TYPE           BILLED       AMOUNT           BILLED    NUMBER
+
+HOLSTEIN, RICHARD            773160920701   03/02/2026   ATB      1       1     SUMMIT       $28.29      $28.29       2    C             $56.58                        $56.58            
+HOLSTEIN, RICHARD            773160920701   03/04/2026   ADF      1       1     SUMMIT        $2.38       $2.38      20    C             $47.60                        $47.60            
+HOLSTEIN, RICHARD            773160920701   03/04/2026   ATB      1       1     SUMMIT       $28.29      $28.29       2    C             $56.58                        $56.58            
+HOLSTEIN, RICHARD            773160920701   03/05/2026   ADF      1       1     SUMMIT        $2.38       $2.38      20    C             $47.60                        $47.60            
+HOLSTEIN, RICHARD            773160920701   03/05/2026   ATB      1       1     SUMMIT       $28.29      $28.29       2    C             $56.58                        $56.58            
+HOLSTEIN, RICHARD            773160920701   03/09/2026   ADF      1       1     SUMMIT        $2.38       $2.38      20    C             $47.60                        $47.60            
+HOLSTEIN, RICHARD            773160920701   03/09/2026   ATB      1       1     SUMMIT       $28.29      $28.29       2    C             $56.58                        $56.58            
+MIKULA, JOSEPH               504054913003   03/04/2026   AEE      1       1     PORTAGE      $16.50      $16.50       4    C             $66.00                        $66.00            
+PEEPLES, DERRIEN             910000743164   03/03/2026   ADL                    SUMMIT      $504.16     $504.16       1    C            $504.16                       $504.16      000   
+PEEPLES, DERRIEN             910000743164   03/04/2026   ADL                    SUMMIT      $504.16     $504.16       1    C            $504.16                       $504.16      000   
+PEEPLES, DERRIEN             910000743164   03/05/2026   ADL                    SUMMIT      $504.16     $504.16       1    C            $504.16                       $504.16      000   
+PEEPLES, DERRIEN             910000743164   03/06/2026   ADL                    SUMMIT      $504.16     $504.16       1    C            $504.16                       $504.16      000   
+PEEPLES, DERRIEN             910000743164   03/07/2026   ADL                    SUMMIT      $504.16     $504.16       1    C            $504.16                       $504.16      000   
+PEEPLES, DERRIEN             910000743164   03/08/2026   ADL                    SUMMIT      $504.16     $504.16       1    C            $504.16                       $504.16      000   
+PEEPLES, DERRIEN             910000743164   03/09/2026   ADL                    SUMMIT      $504.16     $504.16       1    C            $504.16                       $504.16      000   
+PLANTS, JASON                104993220399   03/01/2026   ASA      1       1     SUMMIT      $213.91     $213.91       1    C            $213.91                       $213.91            
+PLANTS, JASON                104993220399   03/02/2026   ASA      1       1     PORTAGE     $213.91     $213.91       1    C            $213.91                       $213.91            
+PLANTS, JASON                104993220399   03/03/2026   ADF      1       1     PORTAGE       $2.38       $2.38      20    C             $47.60                        $47.60            
+PLANTS, JASON                104993220399   03/03/2026   ASA      1       1     PORTAGE     $213.91     $213.91       1    C            $213.91                       $213.91            
+PLANTS, JASON                104993220399   03/03/2026   ATB      1       1     PORTAGE      $28.29      $28.29       2    C             $56.58                        $56.58            
+PLANTS, JASON                104993220399   03/04/2026   ADF      1       1     PORTAGE       $2.38       $2.38      20    C             $47.60                        $47.60            
+PLANTS, JASON                104993220399   03/04/2026   ASA      1       1     PORTAGE     $213.91     $213.91       1    C            $213.91                       $213.91            
+PLANTS, JASON                104993220399   03/04/2026   ATB      1       1     PORTAGE      $28.29      $28.29       2    C             $56.58                        $56.58            
+PLANTS, JASON                104993220399   03/05/2026   ADF      1       1     PORTAGE       $2.38       $2.38      20    C             $47.60                        $47.60            
+PLANTS, JASON                104993220399   03/05/2026   ASA      1       1     PORTAGE     $213.91     $213.91       1    C            $213.91                       $213.91            
+PLANTS, JASON                104993220399   03/05/2026   ATB      1       1     PORTAGE      $28.29      $28.29       2    C             $56.58                        $56.58            
+PLANTS, JASON                104993220399   03/06/2026   ADT      1       1     PORTAGE       $7.15       $7.15      20    C            $143.00                       $143.00            
+PLANTS, JASON                104993220399   03/06/2026   ASA      1       1     PORTAGE     $213.91     $213.91       1    C            $213.91                       $213.91            
+PLANTS, JASON                104993220399   03/06/2026   ATB      1       1     PORTAGE      $28.29      $28.29       2    C             $56.58                        $56.58            
+PLANTS, JASON                104993220399   03/07/2026   ASA      1       1     PORTAGE     $213.91     $213.91       1    C            $213.91                       $213.91            
+PLANTS, JASON                104993220399   03/08/2026   ASA      1       1     PORTAGE     $213.91     $213.91       1    C            $213.91                       $213.91            
+PLANTS, JASON                104993220399   03/09/2026   ADF      1       1     PORTAGE       $2.38       $2.38      20    C             $47.60                        $47.60            
+PLANTS, JASON                104993220399   03/09/2026   ASA      1       1     PORTAGE     $213.91     $213.91       1    C            $213.91                       $213.91            
+PLANTS, JASON                104993220399   03/09/2026   ATB      1       1     PORTAGE      $28.29      $28.29       2    C             $56.58                        $56.58            
+SEXTON, ROSALEA              704044655603   03/03/2026   APC      1       1     STARK         $8.34       $8.34      16    C            $133.44                       $133.44            
+SEXTON, ROSALEA              704044655603   03/06/2026   APC      1       1     STARK         $8.34       $8.34      16    C            $133.44                       $133.44            
+SEXTON, ROSALEA              704044655603   03/09/2026   APC      1       1     STARK         $8.34       $8.34      16    C            $133.44                       $133.44            
+--------------------------                                                                                                       --------------   ----------   --------------
+PROGRAM                                                                                                                              $25,641.04        $0.00       $25,641.04            
+
+                                                                                          N = 85
+                                                                        DEPARTMENT OF DEVELOPMENTAL DISABILITIES                                         08:10 Friday, March 13, 2026   3
+                                                                             DIVISION OF INFORMATION SYSTEMS
+                          (MBSDHSTP)                                                                                                                           
+                                                                                 MEDICAID BILLING SYSTEM
+                                                                 TOTAL NET AMOUNT BILLED TO OHIO DEPARTMENT OF MEDICAID
+                                                                       DURING THE CURRENT BILLING CYCLE OF MAR26C
+                                                                      BY CONTRACTOR, PROGRAM, AND MONTH/YEAR BILLED
+
+--------------------------- CONTRACT NUMBER=7717591  NAME=MEADOWBROOK SERVICES  PROGRAM=LEVEL 1 WAIVER  YEAR/MONTH BILLED=2026/02   ODM PROV MED NBR=0218025 ----------------------------
+
+                             MEDICAID                                                                             UNITS                                OTHER              NET     CLAIM
+                             BILLING           SERVICE   SERV   GROUP   STAFF   SERVICE       INPUT      BILLED    OF     CLM            AMOUNT       SOURCE           AMOUNT   REFERENCE
+RECIPIENT NAME               NUMBER               DATE   CODE   SIZE    SIZE    COUNTY         RATE        RATE   SERV    TYPE           BILLED       AMOUNT           BILLED    NUMBER
+
+MCLEAN, CODY                 104352702599   02/28/2026   FPC      1       1     SUMMIT        $8.50       $8.50      17    C            $144.50                       $144.50            
+
+                                                                                          N = 1
+
+
+--------------------------- CONTRACT NUMBER=7717591  NAME=MEADOWBROOK SERVICES  PROGRAM=LEVEL 1 WAIVER  YEAR/MONTH BILLED=2026/03   ODM PROV MED NBR=0218025 ----------------------------
+
+                             MEDICAID                                                                             UNITS                                OTHER              NET     CLAIM
+                             BILLING           SERVICE   SERV   GROUP   STAFF   SERVICE       INPUT      BILLED    OF     CLM            AMOUNT       SOURCE           AMOUNT   REFERENCE
+RECIPIENT NAME               NUMBER               DATE   CODE   SIZE    SIZE    COUNTY         RATE        RATE   SERV    TYPE           BILLED       AMOUNT           BILLED    NUMBER
+
+BALISHIN, MICHAEL            910001000683   03/03/2026   FEE      1       1     SUMMIT       $16.50      $16.50       8    C            $132.00                       $132.00            
+BALISHIN, MICHAEL            910001000683   03/03/2026   FTB      1       1     SUMMIT       $28.29      $28.29       2    C             $56.58                        $56.58            
+BALISHIN, MICHAEL            910001000683   03/05/2026   FEE      1       1     SUMMIT       $16.50      $16.50       8    C            $132.00                       $132.00            
+BALISHIN, MICHAEL            910001000683   03/05/2026   FTB      1       1     SUMMIT       $28.29      $28.29       2    C             $56.58                        $56.58            
+BALISHIN, MICHAEL            910001000683   03/06/2026   FPC      1       1     SUMMIT        $8.50       $8.50      22    C            $187.00                       $187.00            
+BALISHIN, MICHAEL            910001000683   03/08/2026   FPC      1       1     SUMMIT        $8.50       $8.50      19    C            $161.50                       $161.50            
+BETHUNE, ANTWAINE            106758388899   03/07/2026   FPC      1       1     SUMMIT        $8.50       $8.50      20    C            $170.00                       $170.00            
+BETHUNE, ANTWAINE            106758388899   03/09/2026   FPC      1       1     SUMMIT        $8.50       $8.50      15    C            $127.50                       $127.50            
+FAGAN, RICHARD               104366552899   03/03/2026   FPC      1       1     STARK         $8.34       $8.34      24    C            $200.16                       $200.16            
+FAGAN, RICHARD               104366552899   03/04/2026   FPC      1       1     STARK         $8.34       $8.34      27    C            $225.18                       $225.18            
+FAGAN, RICHARD               104366552899   03/05/2026   FPC      1       1     STARK         $8.34       $8.34      13    C            $108.42                       $108.42            
+KREISER, STEPHEN             108805161899   03/05/2026   FEE      1       1     SUMMIT       $16.50      $16.50       8    C            $132.00                       $132.00            
+MASSIE, EDWARD               104644765099   03/03/2026   FDS      1       1     SUMMIT       $59.50      $59.50       1    C             $59.50                        $59.50            
+MASSIE, EDWARD               104644765099   03/03/2026   FTB      1       1     SUMMIT       $28.29      $28.29       2    C             $56.58                        $56.58            
+MASSIE, EDWARD               104644765099   03/06/2026   FDT      1       1     SUMMIT        $7.15       $7.15      20    C            $143.00                       $143.00            
+MASSIE, EDWARD               104644765099   03/06/2026   FTB      1       1     SUMMIT       $28.29      $28.29       2    C             $56.58                        $56.58            
+MCBRIDE, RODNEY              771082394401   03/03/2026   FDS      1       1     SUMMIT       $59.50      $59.50       1    C             $59.50                        $59.50            
+MCBRIDE, RODNEY              771082394401   03/03/2026   FTB      1       1     SUMMIT       $28.29      $28.29       2    C             $56.58                        $56.58            
+MCBRIDE, RODNEY              771082394401   03/04/2026   FDS      1       1     SUMMIT       $59.50      $59.50       1    C             $59.50                        $59.50            
+MCBRIDE, RODNEY              771082394401   03/04/2026   FTB      1       1     SUMMIT       $28.29      $28.29       2    C             $56.58                        $56.58            
+MCBRIDE, RODNEY              771082394401   03/06/2026   FDT      1       1     SUMMIT        $7.15       $7.15      20    C            $143.00                       $143.00            
+MCBRIDE, RODNEY              771082394401   03/06/2026   FTB      1       1     SUMMIT       $28.29      $28.29       2    C             $56.58                        $56.58            
+MCLEAN, CODY                 104352702599   03/03/2026   FPC      1       1     SUMMIT        $8.50       $8.50      15    C            $127.50                       $127.50            
+MCLEAN, CODY                 104352702599   03/04/2026   FPC      1       1     SUMMIT        $8.50       $8.50      16    C            $136.00                       $136.00            
+MCLEAN, CODY                 104352702599   03/05/2026   FPC      1       1     SUMMIT        $8.50       $8.50      18    C            $153.00                       $153.00            
+MCLEAN, CODY                 104352702599   03/07/2026   FPC      1       1     SUMMIT        $8.50       $8.50      20    C            $170.00                       $170.00            
+TRAVIS, JONTE                106548737199   03/02/2026   FEE      1       1     SUMMIT       $16.50      $16.50       8    C            $132.00                       $132.00            
+--------------------------                                                                                                       --------------   ----------   --------------
+PROGRAM                                                                                                                               $3,299.32        $0.00        $3,299.32            
+
+                                                                                          N = 27
+                                                                        DEPARTMENT OF DEVELOPMENTAL DISABILITIES                                         08:10 Friday, March 13, 2026   4
+                                                                             DIVISION OF INFORMATION SYSTEMS
+                          (MBSDHSTP)                                                                                                                           
+                                                                                 MEDICAID BILLING SYSTEM
+                                                                 TOTAL NET AMOUNT BILLED TO OHIO DEPARTMENT OF MEDICAID
+                                                                       DURING THE CURRENT BILLING CYCLE OF MAR26C
+                                                                      BY CONTRACTOR, PROGRAM, AND MONTH/YEAR BILLED
+
+--------------------------------- CONTRACT NUMBER=7717591  NAME=MEADOWBROOK SERVICES  PROGRAM=SLF  YEAR/MONTH BILLED=2026/03   ODM PROV MED NBR=0218025 ---------------------------------
+
+                             MEDICAID                                                                             UNITS                                OTHER              NET     CLAIM
+                             BILLING           SERVICE   SERV   GROUP   STAFF   SERVICE       INPUT      BILLED    OF     CLM            AMOUNT       SOURCE           AMOUNT   REFERENCE
+RECIPIENT NAME               NUMBER               DATE   CODE   SIZE    SIZE    COUNTY         RATE        RATE   SERV    TYPE           BILLED       AMOUNT           BILLED    NUMBER
+
+BRUNTY, JASON                773213113601   03/03/2026   SDC      1       1     SUMMIT        $8.67       $8.67      20    C            $173.40                       $173.40            
+BRUNTY, JASON                773213113601   03/04/2026   SDC      1       1     SUMMIT        $8.67       $8.67      15    C            $130.05                       $130.05            
+BRUNTY, JASON                773213113601   03/05/2026   SDC      1       1     SUMMIT        $8.67       $8.67      20    C            $173.40                       $173.40            
+BRUNTY, JASON                773213113601   03/06/2026   SDC      1       1     SUMMIT        $8.67       $8.67      20    C            $173.40                       $173.40            
+BRUNTY, JASON                773213113601   03/09/2026   SDC      1       1     SUMMIT        $8.67       $8.67      20    C            $173.40                       $173.40            
+CHERRY, NAOMI                910002590979   03/06/2026   SEE      1       1     SUMMIT       $16.50      $16.50       8    C            $132.00                       $132.00            
+--------------------------                                                                                                       --------------   ----------   --------------
+PROGRAM                                                                                                                                 $955.65        $0.00          $955.65            
+CNTRNAME                                                                                                                             $29,896.01        $0.00       $29,896.01            
+CNTRNUM                                                                                                                              $29,896.01        $0.00       $29,896.01            
+                                                                                                                                 ==============   ==========   ==============
+                                                                                                                                     $29,896.01        $0.00       $29,896.01            
+
+                                                                                        N = 6
+                                                                                  Total N = 120
