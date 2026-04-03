@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Read(///trinity/Trinity/Work/**)"
+      "Read(///trinity/Trinity/Work/**)",
+      "Bash(pip install:*)"
     ]
   }
 }

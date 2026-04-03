@@ -3,11 +3,11 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: shiftnotes-app
+    container_name: fastshiftnotes-app
     env_file:
       - .env
     ports:
-      - "8005:8001"
+      - "8006:8001"
     restart: unless-stopped
     volumes:
       - ./output:/app/output
