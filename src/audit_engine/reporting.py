@@ -16,6 +16,39 @@ from reportlab.lib.units import inch
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.platypus import Paragraph, SimpleDocTemplate, Spacer, Table, TableStyle
 
+# ---------------------------------------------------------------------------
+# Cached PDF styles (avoid recreating on every generation)
+# ---------------------------------------------------------------------------
+_STYLES = getSampleStyleSheet()
+_TITLE_STYLE = ParagraphStyle(
+    "ShiftNoteTitle",
+    parent=_STYLES["Title"],
+    fontName="Helvetica-Bold",
+    fontSize=24,
+    alignment=TA_CENTER,
+    spaceAfter=6,
+)
+_SPAN_STYLE = ParagraphStyle(
+    "ShiftNoteSpan",
+    parent=_STYLES["Heading3"],
+    fontName="Helvetica-Bold",
+    fontSize=13,
+    alignment=TA_LEFT,
+    spaceAfter=10,
+)
+_CELL_STYLE = ParagraphStyle(
+    "ShiftNoteCell",
+    parent=_STYLES["BodyText"],
+    fontName="Helvetica",
+    fontSize=8,
+    leading=10,
+)
+_ACTION_STYLE = ParagraphStyle(
+    "ShiftNoteActionCell",
+    parent=_CELL_STYLE,
+    leading=9,
+)
+
 
 def build_summary(rows: list[AuditRow]) -> AuditSummary:
     total = len(rows)
@@ -365,39 +398,10 @@ def build_shift_note_audit_pdf_bytes(rows: list[AuditRow], start_date: date, end
         topMargin=0.35 * inch,
         bottomMargin=0.35 * inch,
     )
-    styles = getSampleStyleSheet()
     content: list[object] = []
-    title_style = ParagraphStyle(
-        "ShiftNoteTitle",
-        parent=styles["Title"],
-        fontName="Helvetica-Bold",
-        fontSize=24,
-        alignment=TA_CENTER,
-        spaceAfter=6,
-    )
-    span_style = ParagraphStyle(
-        "ShiftNoteSpan",
-        parent=styles["Heading3"],
-        fontName="Helvetica-Bold",
-        fontSize=13,
-        alignment=TA_LEFT,
-        spaceAfter=10,
-    )
-    cell_style = ParagraphStyle(
-        "ShiftNoteCell",
-        parent=styles["BodyText"],
-        fontName="Helvetica",
-        fontSize=8,
-        leading=10,
-    )
-    action_style = ParagraphStyle(
-        "ShiftNoteActionCell",
-        parent=cell_style,
-        leading=9,
-    )
 
-    content.append(Paragraph("Shift Note Audit", title_style))
-    content.append(Paragraph(f"Span Date: {start_date.isoformat()} to {end_date.isoformat()}", span_style))
+    content.append(Paragraph("Shift Note Audit", _TITLE_STYLE))
+    content.append(Paragraph(f"Span Date: {start_date.isoformat()} to {end_date.isoformat()}", _SPAN_STYLE))
     content.append(Spacer(1, 0.08 * inch))
 
     table_data = [
@@ -413,23 +417,21 @@ def build_shift_note_audit_pdf_bytes(rows: list[AuditRow], start_date: date, end
     for row in report_rows:
         table_data.append(
             [
-                Paragraph(row["Clients Name"], cell_style),
-                Paragraph(row["Date"], cell_style),
-                Paragraph(row["Issue found"], cell_style),
-                Paragraph(row["Staff that worked"], cell_style),
-                Paragraph(row["Staff Phone Number"], cell_style),
+                row["Clients Name"],
+                row["Date"],
+                row["Issue found"],
+                row["Staff that worked"],
+                row["Staff Phone Number"],
                 Paragraph(
-                    (
-                        f"{row['Action']}<br/>"
-                        "Received Note: ____________________&nbsp;&nbsp;Date: __________&nbsp;&nbsp;Initials: ______"
-                    ),
-                    action_style,
+                    f"{row['Action']}<br/>"
+                    "Received Note: ____________________  Date: __________  Initials: ______",
+                    _ACTION_STYLE,
                 ),
             ]
         )
 
     if len(table_data) == 1:
-        content.append(Paragraph("No shift note follow-up rows for the selected span.", styles["Normal"]))
+        content.append(Paragraph("No shift note follow-up rows for the selected span.", _STYLES["Normal"]))
     else:
         available_width = doc.width
         column_weights = [0.16, 0.10, 0.18, 0.18, 0.14, 0.24]

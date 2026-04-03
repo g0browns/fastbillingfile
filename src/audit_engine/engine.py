@@ -1,7 +1,10 @@
 from __future__ import annotations
 
+import asyncio
 from datetime import date
 from pathlib import Path
+
+import httpx
 
 from audit_engine.connectors.jotform import fetch_notes_map
 from audit_engine.connectors.when_i_work import fetch_schedule_map
@@ -39,7 +42,7 @@ def _resolve_names_with_aliases(
     return resolved
 
 
-def run_audit(
+async def run_audit(
     billing_files: list[Path],
     when_i_work_base_url: str,
     when_i_work_api_token: str,
@@ -71,29 +74,32 @@ def run_audit(
     billing_client_names = {key.client for key in billing_map}
     registry.seed_from_billing(billing_client_names)
 
-    # Step 3: Fetch schedule (sites + time entries)
-    schedule_map, schedule_issues = fetch_schedule_map(
-        base_url=when_i_work_base_url,
-        api_token=when_i_work_api_token,
-        api_key=when_i_work_api_key,
-        login_email=when_i_work_email,
-        login_password=when_i_work_password,
-        user_id=when_i_work_user_id,
-        start_date=start_date,
-        end_date=end_date,
-        timeout_seconds=timeout_seconds,
-    )
-
-    # Step 4: Fetch notes (all forms, rich fields)
-    notes_map, notes_issues, notes_diagnostics = fetch_notes_map(
-        base_url=jotform_base_url,
-        api_key=jotform_api_key,
-        form_id=jotform_form_id,
-        start_date=start_date,
-        end_date=end_date,
-        timeout_seconds=timeout_seconds,
-        auto_discover=jotform_auto_discover,
-    )
+    # Step 3+4: Fetch schedule and notes in parallel
+    async with httpx.AsyncClient() as client:
+        (schedule_map, schedule_issues), (notes_map, notes_issues, notes_diagnostics) = await asyncio.gather(
+            fetch_schedule_map(
+                client=client,
+                base_url=when_i_work_base_url,
+                api_token=when_i_work_api_token,
+                api_key=when_i_work_api_key,
+                login_email=when_i_work_email,
+                login_password=when_i_work_password,
+                user_id=when_i_work_user_id,
+                start_date=start_date,
+                end_date=end_date,
+                timeout_seconds=timeout_seconds,
+            ),
+            fetch_notes_map(
+                client=client,
+                base_url=jotform_base_url,
+                api_key=jotform_api_key,
+                form_id=jotform_form_id,
+                start_date=start_date,
+                end_date=end_date,
+                timeout_seconds=timeout_seconds,
+                auto_discover=jotform_auto_discover,
+            ),
+        )
 
     # Step 5: Resolve names via alias registry
     schedule_map = _resolve_names_with_aliases(schedule_map, registry)

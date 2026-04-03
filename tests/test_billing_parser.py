@@ -8,9 +8,9 @@ def test_parse_billing_file_extracts_client_day_and_service_codes(tmp_path: Path
     fixture.write_text(
         "\n".join(
             [
-                "SIMPSON, BETHANY             106391999599   02/10/2025   ATN      1       1     MEDINA",
-                "SIMPSON, BETHANY             106391999599   02/10/2025   APC      1       1     MEDINA",
-                "COHN, MARTIN                 105973135499   03/12/2025   APC      1       1     SUMMIT",
+                "SIMPSON, BETHANY             106391999599   02/10/2025   ATN      1       1     MEDINA   $15.00   $15.00   4   O   $60.00",
+                "SIMPSON, BETHANY             106391999599   02/10/2025   APC      1       1     MEDINA   $15.00   $15.00   4   O   $60.00",
+                "COHN, MARTIN                 105973135499   03/12/2025   APC      1       1     SUMMIT   $15.00   $15.00   4   O   $60.00",
             ]
         ),
         encoding="utf-8",

@@ -1,10 +1,11 @@
 from __future__ import annotations
 
+import asyncio
 from datetime import date, datetime
 from email.utils import parsedate_to_datetime
 from typing import Any
 
-import requests
+import httpx
 
 from audit_engine.models import (
     ClientDayKey,
@@ -58,8 +59,8 @@ def _parse_wiw_datetime(raw: str) -> datetime | None:
 # ---------------------------------------------------------------------------
 
 
-def _fetch_user_name_map(base_url: str, headers: dict[str, str], timeout_seconds: int) -> dict[str, str]:
-    response = requests.get(f"{base_url.rstrip('/')}/users", headers=headers, timeout=timeout_seconds)
+async def _fetch_user_name_map(client: httpx.AsyncClient, base_url: str, headers: dict[str, str], timeout_seconds: int) -> dict[str, str]:
+    response = await client.get(f"{base_url.rstrip('/')}/users", headers=headers, timeout=timeout_seconds)
     response.raise_for_status()
     payload = response.json()
     users = payload.get("users")
@@ -110,8 +111,8 @@ def _extract_user_phone(user: dict[str, Any]) -> str:
     return ""
 
 
-def _fetch_user_phone_map(base_url: str, headers: dict[str, str], timeout_seconds: int) -> dict[str, str]:
-    response = requests.get(f"{base_url.rstrip('/')}/users", headers=headers, timeout=timeout_seconds)
+async def _fetch_user_phone_map(client: httpx.AsyncClient, base_url: str, headers: dict[str, str], timeout_seconds: int) -> dict[str, str]:
+    response = await client.get(f"{base_url.rstrip('/')}/users", headers=headers, timeout=timeout_seconds)
     response.raise_for_status()
     payload = response.json()
     users = payload.get("users")
@@ -128,9 +129,9 @@ def _fetch_user_phone_map(base_url: str, headers: dict[str, str], timeout_second
     return mapping
 
 
-def _fetch_site_name_map(base_url: str, headers: dict[str, str], timeout_seconds: int) -> dict[str, str]:
+async def _fetch_site_name_map(client: httpx.AsyncClient, base_url: str, headers: dict[str, str], timeout_seconds: int) -> dict[str, str]:
     """Fetch sites — these are CLIENTS, not business locations."""
-    response = requests.get(f"{base_url.rstrip('/')}/sites", headers=headers, timeout=timeout_seconds)
+    response = await client.get(f"{base_url.rstrip('/')}/sites", headers=headers, timeout=timeout_seconds)
     response.raise_for_status()
     payload = response.json()
     sites = payload.get("sites")
@@ -147,8 +148,8 @@ def _fetch_site_name_map(base_url: str, headers: dict[str, str], timeout_seconds
     return mapping
 
 
-def _fetch_position_name_map(base_url: str, headers: dict[str, str], timeout_seconds: int) -> dict[str, str]:
-    response = requests.get(f"{base_url.rstrip('/')}/positions", headers=headers, timeout=timeout_seconds)
+async def _fetch_position_name_map(client: httpx.AsyncClient, base_url: str, headers: dict[str, str], timeout_seconds: int) -> dict[str, str]:
+    response = await client.get(f"{base_url.rstrip('/')}/positions", headers=headers, timeout=timeout_seconds)
     response.raise_for_status()
     payload = response.json()
     positions = payload.get("positions")
@@ -165,8 +166,8 @@ def _fetch_position_name_map(base_url: str, headers: dict[str, str], timeout_sec
     return mapping
 
 
-def _fetch_location_name_map(base_url: str, headers: dict[str, str], timeout_seconds: int) -> dict[str, str]:
-    response = requests.get(f"{base_url.rstrip('/')}/locations", headers=headers, timeout=timeout_seconds)
+async def _fetch_location_name_map(client: httpx.AsyncClient, base_url: str, headers: dict[str, str], timeout_seconds: int) -> dict[str, str]:
+    response = await client.get(f"{base_url.rstrip('/')}/locations", headers=headers, timeout=timeout_seconds)
     response.raise_for_status()
     payload = response.json()
     locations = payload.get("locations")
@@ -183,7 +184,8 @@ def _fetch_location_name_map(base_url: str, headers: dict[str, str], timeout_sec
     return mapping
 
 
-def _fetch_time_entries(
+async def _fetch_time_entries(
+    client: httpx.AsyncClient,
     base_url: str,
     headers: dict[str, str],
     start_date: date,
@@ -197,7 +199,7 @@ def _fetch_time_entries(
     """Fetch clock in/out records, indexed by shift_id and client-day."""
     url = f"{base_url.rstrip('/')}/times"
     params = {"start": start_date.isoformat(), "end": end_date.isoformat()}
-    response = requests.get(url, headers=headers, params=params, timeout=timeout_seconds)
+    response = await client.get(url, headers=headers, params=params, timeout=timeout_seconds)
     response.raise_for_status()
     payload = response.json()
     raw_times = payload.get("times")
@@ -300,7 +302,8 @@ def _fetch_time_entries(
 # ---------------------------------------------------------------------------
 
 
-def fetch_schedule_map(
+async def fetch_schedule_map(
+    client: httpx.AsyncClient,
     base_url: str,
     api_token: str,
     api_key: str,
@@ -312,7 +315,8 @@ def fetch_schedule_map(
     timeout_seconds: int,
 ) -> tuple[dict[ClientDayKey, ScheduleDay], list[SourceIssue]]:
     issues: list[SourceIssue] = []
-    access_token = _resolve_access_token(
+    access_token = await _resolve_access_token(
+        client=client,
         api_token=api_token,
         api_key=api_key,
         login_email=login_email,
@@ -327,36 +331,51 @@ def fetch_schedule_map(
     if user_id:
         headers["W-UserId"] = user_id
 
-    # Fetch lookup maps
-    user_name_by_id = _fetch_user_name_map(base_url=base_url, headers=headers, timeout_seconds=timeout_seconds)
-    user_phone_by_id = _fetch_user_phone_map(base_url=base_url, headers=headers, timeout_seconds=timeout_seconds)
-    site_name_by_id = _fetch_site_name_map(base_url=base_url, headers=headers, timeout_seconds=timeout_seconds)
-    position_name_by_id = _fetch_position_name_map(base_url=base_url, headers=headers, timeout_seconds=timeout_seconds)
-    location_name_by_id = _fetch_location_name_map(base_url=base_url, headers=headers, timeout_seconds=timeout_seconds)
+    # Fetch all lookup maps in parallel
+    (
+        user_name_by_id,
+        user_phone_by_id,
+        site_name_by_id,
+        position_name_by_id,
+        location_name_by_id,
+    ) = await asyncio.gather(
+        _fetch_user_name_map(client, base_url, headers, timeout_seconds),
+        _fetch_user_phone_map(client, base_url, headers, timeout_seconds),
+        _fetch_site_name_map(client, base_url, headers, timeout_seconds),
+        _fetch_position_name_map(client, base_url, headers, timeout_seconds),
+        _fetch_location_name_map(client, base_url, headers, timeout_seconds),
+    )
     location_names_normalized = {
         normalize_name(name) for name in location_name_by_id.values() if normalize_name(name)
     }
 
-    # Fetch time entries (EVV)
-    time_entries_by_shift, time_entries_by_client_day, times_issues = _fetch_time_entries(
-        base_url=base_url,
-        headers=headers,
-        start_date=start_date,
-        end_date=end_date,
-        timeout_seconds=timeout_seconds,
-        user_name_by_id=user_name_by_id,
-        user_phone_by_id=user_phone_by_id,
-        site_name_by_id=site_name_by_id,
-        location_names_normalized=location_names_normalized,
+    # Fetch time entries and shifts in parallel
+    async def _get_time_entries():
+        return await _fetch_time_entries(
+            client=client,
+            base_url=base_url,
+            headers=headers,
+            start_date=start_date,
+            end_date=end_date,
+            timeout_seconds=timeout_seconds,
+            user_name_by_id=user_name_by_id,
+            user_phone_by_id=user_phone_by_id,
+            site_name_by_id=site_name_by_id,
+            location_names_normalized=location_names_normalized,
+        )
+
+    async def _get_shifts():
+        url = f"{base_url.rstrip('/')}/shifts"
+        params = {"start": start_date.isoformat(), "end": end_date.isoformat(), "limit": 1000}
+        response = await client.get(url, headers=headers, params=params, timeout=timeout_seconds)
+        response.raise_for_status()
+        return response.json()
+
+    (time_entries_by_shift, time_entries_by_client_day, times_issues), payload = await asyncio.gather(
+        _get_time_entries(),
+        _get_shifts(),
     )
     issues.extend(times_issues)
-
-    # Fetch shifts
-    url = f"{base_url.rstrip('/')}/shifts"
-    params = {"start": start_date.isoformat(), "end": end_date.isoformat(), "limit": 1000}
-    response = requests.get(url, headers=headers, params=params, timeout=timeout_seconds)
-    response.raise_for_status()
-    payload = response.json()
 
     if isinstance(payload, dict):
         raw_shifts = payload.get("shifts")
@@ -499,7 +518,8 @@ def fetch_schedule_map(
 # ---------------------------------------------------------------------------
 
 
-def _resolve_access_token(
+async def _resolve_access_token(
+    client: httpx.AsyncClient,
     api_token: str,
     api_key: str,
     login_email: str,
@@ -515,7 +535,7 @@ def _resolve_access_token(
     if api_key:
         headers["W-Key"] = api_key
 
-    response = requests.post(
+    response = await client.post(
         "https://api.login.wheniwork.com/login",
         headers=headers,
         json={"email": login_email, "password": login_password},

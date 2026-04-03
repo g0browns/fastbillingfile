@@ -1,10 +1,11 @@
 from __future__ import annotations
 
+import asyncio
 from datetime import date, time
 from decimal import Decimal, InvalidOperation
 from typing import Any
 
-import requests
+import httpx
 
 from audit_engine.models import (
     ClientDayKey,
@@ -22,7 +23,8 @@ from audit_engine.normalize import normalize_date, normalize_name
 # ---------------------------------------------------------------------------
 
 
-def discover_shift_note_forms(
+async def discover_shift_note_forms(
+    client: httpx.AsyncClient,
     base_url: str,
     api_key: str,
     timeout_seconds: int,
@@ -35,7 +37,7 @@ def discover_shift_note_forms(
 
     while True:
         params = {"limit": str(limit), "offset": str(offset)}
-        response = requests.get(
+        response = await client.get(
             f"{base_url.rstrip('/')}/user/forms",
             headers=headers,
             params=params,
@@ -48,7 +50,7 @@ def discover_shift_note_forms(
         if payload.get("responseCode") == 301 and isinstance(payload.get("location"), str):
             redirected = payload["location"].strip()
             if redirected:
-                response = requests.get(redirected, headers=headers, params=params, timeout=timeout_seconds)
+                response = await client.get(redirected, headers=headers, params=params, timeout=timeout_seconds)
                 response.raise_for_status()
                 payload = response.json()
 
@@ -296,7 +298,8 @@ def _extract_narrative(by_name: dict[str, dict[str, Any]]) -> tuple[bool, int]:
 # ---------------------------------------------------------------------------
 
 
-def fetch_notes_map(
+async def fetch_notes_map(
+    client: httpx.AsyncClient,
     base_url: str,
     api_key: str,
     form_id: str,
@@ -311,7 +314,7 @@ def fetch_notes_map(
         form_ids = [f.strip() for f in form_id.split(",") if f.strip()]
 
     if not form_ids and auto_discover:
-        discovered = discover_shift_note_forms(base_url, api_key, timeout_seconds)
+        discovered = await discover_shift_note_forms(client, base_url, api_key, timeout_seconds)
         form_ids = [f["id"] for f in discovered]
 
     if not form_ids:
@@ -322,23 +325,47 @@ def fetch_notes_map(
     issues: list[SourceIssue] = []
     diagnostics = NotesDiagnostics()
 
-    for fid in form_ids:
-        _fetch_form_submissions(
+    # Fetch all forms in parallel
+    async def _fetch_one_form(fid: str) -> tuple[dict[ClientDayKey, NotesDay], list[SourceIssue], NotesDiagnostics]:
+        fm: dict[ClientDayKey, NotesDay] = {}
+        fi: list[SourceIssue] = []
+        fd = NotesDiagnostics()
+        await _fetch_form_submissions(
+            client=client,
             base_url=base_url,
             api_key=api_key,
             form_id=fid,
             start_date=start_date,
             end_date=end_date,
             timeout_seconds=timeout_seconds,
-            notes_map=notes_map,
-            issues=issues,
-            diagnostics=diagnostics,
+            notes_map=fm,
+            issues=fi,
+            diagnostics=fd,
         )
+        return fm, fi, fd
+
+    results = await asyncio.gather(*[_fetch_one_form(fid) for fid in form_ids])
+    for fm, fi, fd in results:
+        for key, val in fm.items():
+            if key in notes_map:
+                notes_map[key].notes.extend(val.notes)
+            else:
+                notes_map[key] = val
+        issues.extend(fi)
+        diagnostics.missing_client_count += fd.missing_client_count
+        diagnostics.missing_service_date_count += fd.missing_service_date_count
+        diagnostics.invalid_service_date_count += fd.invalid_service_date_count
+        diagnostics.out_of_range_service_date_count += fd.out_of_range_service_date_count
+        diagnostics.missing_client_samples.extend(fd.missing_client_samples)
+        diagnostics.missing_service_date_samples.extend(fd.missing_service_date_samples)
+        diagnostics.invalid_service_date_samples.extend(fd.invalid_service_date_samples)
+        diagnostics.out_of_range_service_date_samples.extend(fd.out_of_range_service_date_samples)
 
     return notes_map, issues, diagnostics
 
 
-def _fetch_form_submissions(
+async def _fetch_form_submissions(
+    client: httpx.AsyncClient,
     base_url: str,
     api_key: str,
     form_id: str,
@@ -358,7 +385,8 @@ def _fetch_form_submissions(
     limit = 1000
 
     while True:
-        submissions, endpoint = _fetch_submissions_page(
+        submissions, endpoint = await _fetch_submissions_page(
+            client=client,
             endpoint=endpoint,
             api_key=api_key,
             limit=limit,
@@ -556,7 +584,8 @@ def _process_submission(
 # ---------------------------------------------------------------------------
 
 
-def _fetch_submissions_page(
+async def _fetch_submissions_page(
+    client: httpx.AsyncClient,
     endpoint: str,
     api_key: str,
     limit: int,
@@ -565,14 +594,14 @@ def _fetch_submissions_page(
 ) -> tuple[list[dict[str, Any]], str]:
     headers = {"APIKEY": api_key, "Accept": "application/json"}
     params = {"limit": str(limit), "offset": str(offset)}
-    response = requests.get(endpoint, headers=headers, params=params, timeout=timeout_seconds)
+    response = await client.get(endpoint, headers=headers, params=params, timeout=timeout_seconds)
     response.raise_for_status()
     payload = response.json()
     response_code = payload.get("responseCode")
     if response_code == 301 and isinstance(payload.get("location"), str):
         redirected_endpoint = payload["location"].strip()
         if redirected_endpoint:
-            response = requests.get(redirected_endpoint, headers=headers, params=params, timeout=timeout_seconds)
+            response = await client.get(redirected_endpoint, headers=headers, params=params, timeout=timeout_seconds)
             response.raise_for_status()
             payload = response.json()
             endpoint = redirected_endpoint

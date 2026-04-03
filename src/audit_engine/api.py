@@ -60,7 +60,7 @@ def dashboard() -> FileResponse:
 
 
 @app.get("/audit")
-def audit(
+async def audit(
     billing_dir: str = Query(..., description="Directory containing billing TXT files"),
     start_date: str = Query(..., description="YYYY-MM-DD"),
     end_date: str = Query(..., description="YYYY-MM-DD"),
@@ -70,7 +70,7 @@ def audit(
     if not files:
         return {"error": f"no billing files found in {billing_dir}"}
 
-    result = _run_with_settings(settings, files, start_date, end_date)
+    result = await _run_with_settings(settings, files, start_date, end_date)
     return _result_payload(result)
 
 
@@ -158,7 +158,7 @@ async def _run_audit_upload_request(
         temp_path = Path(handle.name)
 
     try:
-        return _run_with_settings(
+        return await _run_with_settings(
             settings,
             [temp_path],
             start_date,
@@ -172,9 +172,9 @@ async def _run_audit_upload_request(
             pass
 
 
-def _run_with_settings(settings, billing_files, start_date, end_date, paper_notes_clients: set[str] | None = None):
+async def _run_with_settings(settings, billing_files, start_date, end_date, paper_notes_clients: set[str] | None = None):
     hpc_path = Path(settings.hpc_file_path) if settings.hpc_file_path else None
-    return run_audit(
+    return await run_audit(
         billing_files=billing_files,
         when_i_work_base_url=settings.when_i_work_base_url,
         when_i_work_api_token=settings.when_i_work_api_token,

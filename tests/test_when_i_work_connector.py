@@ -1,3 +1,6 @@
+import asyncio
+from datetime import date
+
 from audit_engine.connectors.when_i_work import _resolve_access_token, fetch_schedule_map
 
 
@@ -14,8 +17,22 @@ class _FakeResponse:
             raise RuntimeError("http error")
 
 
-def test_schedule_map_uses_user_lookup_for_client_name(monkeypatch):
-    def fake_get(url, headers=None, params=None, timeout=None):
+class _FakeAsyncClient:
+    """Mock httpx.AsyncClient that delegates to a callback."""
+
+    def __init__(self, get_fn=None, post_fn=None):
+        self._get_fn = get_fn
+        self._post_fn = post_fn
+
+    async def get(self, url, **kwargs):
+        return self._get_fn(url, **kwargs)
+
+    async def post(self, url, **kwargs):
+        return self._post_fn(url, **kwargs)
+
+
+def test_schedule_map_uses_user_lookup_for_client_name():
+    def fake_get(url, **kwargs):
         if url.endswith("/users"):
             return _FakeResponse(
                 {"users": [{"id": 101, "first_name": "Bethany", "last_name": "Simpson", "phone": "614-555-0101"}]}
@@ -45,17 +62,20 @@ def test_schedule_map_uses_user_lookup_for_client_name(monkeypatch):
             )
         raise AssertionError("unexpected url")
 
-    monkeypatch.setattr("audit_engine.connectors.when_i_work.requests.get", fake_get)
-    schedule_map, issues = fetch_schedule_map(
-        base_url="https://api.wheniwork.com/2",
-        api_token="token",
-        api_key="",
-        login_email="",
-        login_password="",
-        user_id="",
-        start_date=__import__("datetime").date(2025, 2, 10),
-        end_date=__import__("datetime").date(2025, 2, 10),
-        timeout_seconds=30,
+    client = _FakeAsyncClient(get_fn=fake_get)
+    schedule_map, issues = asyncio.run(
+        fetch_schedule_map(
+            client=client,
+            base_url="https://api.wheniwork.com/2",
+            api_token="token",
+            api_key="",
+            login_email="",
+            login_password="",
+            user_id="",
+            start_date=date(2025, 2, 10),
+            end_date=date(2025, 2, 10),
+            timeout_seconds=30,
+        )
     )
     assert not issues
     assert len(schedule_map) == 1
@@ -65,8 +85,8 @@ def test_schedule_map_uses_user_lookup_for_client_name(monkeypatch):
     assert schedule_map[key].shifts[0].staff_phone == "614-555-0101"
 
 
-def test_schedule_excludes_non_client_site_labels(monkeypatch):
-    def fake_get(url, headers=None, params=None, timeout=None):
+def test_schedule_excludes_non_client_site_labels():
+    def fake_get(url, **kwargs):
         if url.endswith("/users"):
             return _FakeResponse({"users": [{"id": 301, "first_name": "Mary", "last_name": "Hankins"}]})
         if url.endswith("/sites"):
@@ -94,23 +114,26 @@ def test_schedule_excludes_non_client_site_labels(monkeypatch):
             )
         raise AssertionError("unexpected url")
 
-    monkeypatch.setattr("audit_engine.connectors.when_i_work.requests.get", fake_get)
-    schedule_map, issues = fetch_schedule_map(
-        base_url="https://api.wheniwork.com/2",
-        api_token="token",
-        api_key="",
-        login_email="",
-        login_password="",
-        user_id="",
-        start_date=__import__("datetime").date(2025, 1, 27),
-        end_date=__import__("datetime").date(2025, 1, 27),
-        timeout_seconds=30,
+    client = _FakeAsyncClient(get_fn=fake_get)
+    schedule_map, issues = asyncio.run(
+        fetch_schedule_map(
+            client=client,
+            base_url="https://api.wheniwork.com/2",
+            api_token="token",
+            api_key="",
+            login_email="",
+            login_password="",
+            user_id="",
+            start_date=date(2025, 1, 27),
+            end_date=date(2025, 1, 27),
+            timeout_seconds=30,
+        )
     )
     assert schedule_map == {}
     assert any(issue.issue_type == "non_client_site_excluded" for issue in issues)
 
 
-def test_resolve_access_token_from_login(monkeypatch):
+def test_resolve_access_token_from_login():
     class _Resp:
         status_code = 200
 
@@ -124,21 +147,23 @@ def test_resolve_access_token_from_login(monkeypatch):
 
     captured = {}
 
-    def fake_post(url, headers=None, json=None, timeout=None):
+    def fake_post(url, **kwargs):
         captured["url"] = url
-        captured["headers"] = headers or {}
-        captured["json"] = json or {}
+        captured["headers"] = kwargs.get("headers", {})
+        captured["json"] = kwargs.get("json", {})
         return _Resp()
 
-    monkeypatch.setattr("audit_engine.connectors.when_i_work.requests.post", fake_post)
-    token = _resolve_access_token(
-        api_token="",
-        api_key="dev-key",
-        login_email="user@example.com",
-        login_password="pw",
-        timeout_seconds=30,
+    client = _FakeAsyncClient(post_fn=fake_post)
+    token = asyncio.run(
+        _resolve_access_token(
+            client=client,
+            api_token="",
+            api_key="dev-key",
+            login_email="user@example.com",
+            login_password="pw",
+            timeout_seconds=30,
+        )
     )
     assert token == "jwt-token-value"
     assert captured["url"].endswith("/login")
     assert captured["headers"].get("W-Key") == "dev-key"
-

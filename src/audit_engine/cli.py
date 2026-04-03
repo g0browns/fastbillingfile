@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import asyncio
 from pathlib import Path
 
 from audit_engine.config import load_settings
@@ -22,7 +23,7 @@ def build_parser() -> argparse.ArgumentParser:
     return parser
 
 
-def main() -> None:
+async def _async_main() -> None:
     parser = build_parser()
     args = parser.parse_args()
     settings = load_settings()
@@ -33,7 +34,7 @@ def main() -> None:
         raise RuntimeError(f"no billing .TXT files found under {billing_dir}")
 
     hpc_path = Path(settings.hpc_file_path) if settings.hpc_file_path else None
-    result = run_audit(
+    result = await run_audit(
         billing_files=billing_files,
         when_i_work_base_url=settings.when_i_work_base_url,
         when_i_work_api_token=settings.when_i_work_api_token,
@@ -55,6 +56,10 @@ def main() -> None:
     output_dir = Path(args.output_dir or settings.audit_output_dir)
     write_exports(result=result, output_dir=output_dir)
     print(f"Audit complete. Exported files to: {output_dir.resolve()}")
+
+
+def main() -> None:
+    asyncio.run(_async_main())
 
 
 if __name__ == "__main__":
