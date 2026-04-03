@@ -625,9 +625,29 @@ function renderExceptions(exceptions) {
     list.innerHTML = "<li>NONE</li>";
     return;
   }
+  list.style.listStyle = "none";
+  list.style.paddingLeft = "0";
   exceptions.forEach((row) => {
+    const status = row.status || "";
+    const reason = row.reason || row.exception_reason || "";
+    const isCritical = status.startsWith("CRITICAL");
+    const isWarning = status.startsWith("WARNING");
+    const isReview = status.startsWith("REVIEW");
+    const tagClass = isCritical ? "tag-critical" : isWarning ? "tag-warning" : "tag-review";
+    const borderClass = isCritical ? "audit-card-critical" : isWarning ? "audit-card-missing" : "";
+
     const li = document.createElement("li");
-    li.textContent = `${row.client} ${row.date} :: ${row.status} :: ${row.reason || row.exception_reason}`;
+    li.className = `audit-card ${borderClass}`;
+    li.style.marginBottom = "8px";
+    li.innerHTML =
+      `<div class="audit-card-head">` +
+        `<div>` +
+          `<h3>${escapeHtml(row.client ? row.client.replace(/\b\w/g, c => c.toUpperCase()) : "")}</h3>` +
+          `<p class="muted">${escapeHtml(row.date || "")}</p>` +
+        `</div>` +
+        `<span class="tag ${tagClass}">${escapeHtml(status)}</span>` +
+      `</div>` +
+      `<p style="margin:8px 0 0;font-size:14px;">${escapeHtml(reason)}</p>`;
     list.appendChild(li);
   });
 }

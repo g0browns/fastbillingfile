@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "Read(///trinity/Trinity/Work/**)",
-      "Bash(pip install:*)"
+      "Bash(pip install:*)",
+      "Bash(grep -v '${escapeHtml')"
     ]
   }
 }
